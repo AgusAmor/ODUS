@@ -1,0 +1,60 @@
+"use client";
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { MdAccountCircle } from 'react-icons/md';
+
+export default function Header() {
+  const pathname = usePathname();
+
+  const navLinks = [
+    { name: 'Inicio', href: '/' },
+    { name: 'Especialidades', href: '/specialties' },
+    { name: 'Sedes', href: '/centers' },
+    { name: 'Nosotros', href: '/about' },
+  ];
+
+  return (
+    <nav className="bg-tertiary/70 backdrop-blur-xl w-full top-0 sticky z-50 border-b border-neutral/20 shadow-sm hidden md:block">
+      <div className="flex justify-between items-center w-full px-10 py-4 max-w-7xl mx-auto">
+        {/* Logo Section */}
+        <div className="font-heading text-2xl font-extrabold text-primary flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
+            <span className="bg-primary text-tertiary px-2 py-1 rounded-md text-sm tracking-widest font-bold">ODUS</span>
+            <span className="hidden sm:inline">Centro Médico</span>
+          </Link>
+        </div>
+
+        {/* Navigation Links */}
+        <ul className="flex gap-8 items-center text-sm font-bold">
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={`px-3 py-2 transition-colors rounded-lg ${isActive
+                    ? 'text-primary border-b-2 border-primary pb-1 rounded-b-none'
+                    : 'text-neutral hover:text-primary hover:bg-primary/5'
+                    }`}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+
+        {/* Action Buttons */}
+        <div className="flex items-center gap-4">
+          <button className="bg-primary text-tertiary px-6 py-2.5 rounded-2xl text-sm font-bold hover:scale-95 transition-transform shadow-sm cursor-pointer">
+            Reservar Turno
+          </button>
+          <button className="text-neutral hover:bg-primary/10 rounded-full p-2 transition-colors flex items-center justify-center cursor-pointer">
+            <MdAccountCircle size={28} />
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+}
