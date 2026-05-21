@@ -61,6 +61,11 @@ To ensure maximum scalability and code sharing between the landing page, the pat
         *   `ci`: CI pipeline changes (GitHub Actions, etc.).
 6.  **Icon Usage:**
     *   **ALWAYS** use icons from `react-icons` when an icon is needed. Do not use external icon stylesheets, local SVG copies, or Google Material symbols.
+7.  **Scroll Entrance Animation System:**
+    *   To keep the landing page highly performant and consistent with the "Warm Minimalism" aesthetics, ODUS uses a custom, once-off scroll reveal system.
+    *   **Hook (`apps/landing/components/useScrollReveal.js`)**: Uses native browser `IntersectionObserver` that automatically disconnects after the element is revealed to keep CPU overhead at zero.
+    *   **Classes**: Defines premium entrance styles in [globals.css](file:///c:/Users/Elmo/Desktop/ODUS/apps/landing/app/globals.css) under `.reveal-fade-up`, combined with staggered delays (`.transition-delay-75` to `.transition-delay-450`).
+    *   **Strict Rule**: Avoid installing third-party animation libraries (such as Framer Motion or GSAP) unless explicitly requested, as they bloat bundle size. Use the custom reveal hook and native CSS transitions.
 
 ---
 
