@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ODUS - Landing Page
 
-## Getting Started
+Esta es la aplicación Next.js (App Router) encargada de la landing page del Centro Médico ODUS. Presenta las especialidades, sedes, información institucional y el acceso para solicitar turnos en línea de forma moderna, rápida y optimizada para SEO.
 
-First, run the development server:
+## Características y Estado Actual
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+La landing page se encuentra actualmente en desarrollo activo (**Fase 1**). Se han implementado los siguientes componentes y configuraciones:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Configuración del Sistema de Diseño (Tailwind CSS v4)**: Definición en [globals.css](file:///c:/Users/Elmo/Desktop/ODUS/apps/landing/app/globals.css) de la paleta estricta de 4 colores de la marca, fuentes (`Inter` y `Manrope`) y los tokens de espaciado/tipografía.
+*   **Header Global**: Barra de navegación superior responsiva con comportamiento activo de rutas y botones de acción.
+*   **Hero Section**: Sección de cabecera con tarjetas flotantes estilo glassmorphic ("Diagnóstico de Precisión", "Atención Sin Demoras") y botones de acción rápida para solicitud de turnos y contacto por WhatsApp.
+*   **Footer Global**: Pie de página con enlaces y estructura para sedes, portal de paciente, contacto y avisos legales.
+*   **Biblioteca de Iconos**: Uso unificado y exclusivo de `react-icons`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Estructura de Carpetas Clave
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   `app/`: Contiene el App Router de Next.js (páginas, layouts y estilos globales).
+*   `components/`: Componentes modulares y reutilizables de la aplicación (ej. `Header.jsx`, `Hero.jsx`, `Footer.jsx`).
+*   `public/`: Archivos estáticos como imágenes y logos.

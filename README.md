@@ -1,72 +1,44 @@
-# ODUS Centro Médico
+# ODUS Centro Médico - Repositorio Principal
 
-Bienvenido al repositorio del proyecto ODUS. ODUS es una solución tecnológica integral para un centro médico moderno, diseñada para brindar una experiencia digital fluida a los pacientes y optimizar las operaciones clínicas para el personal médico y administrativo.
+Este repositorio contiene la solución tecnológica integral para el **Centro Médico ODUS**. Está diseñado para brindar una experiencia digital moderna y fluida a los pacientes, al mismo tiempo que optimiza la gestión clínica y operativa para los profesionales médicos y el personal administrativo.
 
-## Visión del Proyecto
+## De qué trata el Proyecto
 
-El proyecto tiene como objetivo modernizar la infraestructura digital de la clínica a través de dos fases principales:
-1.  **Fase 1 - Landing Page (Actual):** Un sitio web público de alto rendimiento y optimizado para SEO para mostrar las especialidades de la clínica, los centros médicos y la información institucional.
-2.  **Fase 2 - Sistema de Gestión de Clínica (Futuro):** Una reconstrucción completa del sistema de gestión heredado en PHP. Esto incluirá:
-    *   **Portal del Paciente:** Para la autogestión de turnos médicos y resultados de estudios.
-    *   **Intranet (Dashboard):** Para que médicos y recepcionistas administren las operaciones diarias de la clínica.
+El desarrollo del proyecto se divide en dos fases estratégicas:
 
-## Arquitectura y Stack Tecnológico
+1.  **Fase 1 - Landing Page pública (En curso)**: Un portal web de alto rendimiento y optimización SEO orientado a presentar las especialidades médicas, sedes, profesionales y la información institucional del centro.
+2.  **Fase 2 - Sistema de Gestión de Clínica (Planificado)**: Una reconstrucción integral desde cero del sistema heredado en PHP, compuesto por:
+    *   **Portal del Paciente**: Autogestión de turnos médicos y consulta de resultados de estudios.
+    *   **Intranet Administrativa**: Panel de control interactivo para la gestión diaria de agendas médicas, recepcionistas e historial clínico digital.
 
-El proyecto está estructurado como un **Monorepo** para maximizar la reutilización de código, garantizar la consistencia y simplificar la gestión de dependencias en múltiples aplicaciones.
+## Stack Tecnológico
 
-*   **Herramientas de Monorepo:** [Turborepo](https://turbo.build/repo) y `pnpm workspaces`.
-*   **Framework Frontend:** [Next.js](https://nextjs.org/) (App Router).
-*   **Lenguaje:** JavaScript (ES6+).
-*   **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/) con un sistema de diseño personalizado de "Minimalismo Cálido".
-*   **Backend / API (Futuro):** NestJS.
-*   **Contenedores:** Docker.
+El proyecto está diseñado bajo una arquitectura de **Monorepo** moderna para facilitar la reutilización de código y mantener la consistencia entre los diferentes servicios:
 
-### Estructura del Proyecto
+*   **Gestión del Monorepo**: [Turborepo](https://turbo.build/) en conjunto con `pnpm workspaces`.
+*   **Frontend (Landing Page y Portal)**: [Next.js](https://nextjs.org/) (App Router), configurado exclusivamente en **JavaScript (ES6+)** (sin TypeScript).
+*   **Estilos**: [Tailwind CSS v4](https://tailwindcss.com/), utilizando un sistema de diseño propio basado en "Minimalismo Cálido".
+*   **Backend (API de Gestión)**: [NestJS](https://nestjs.com/) (Planificado).
+*   **Contenedores e Infraestructura**: Docker.
+
+## Cómo está Hecho (Estructura del Proyecto)
+
+El monorepo organiza las aplicaciones y los paquetes de configuración compartidos en directorios específicos:
+
 ```text
 odus/
 ├── apps/
 │   ├── landing/       # Sitio web público en Next.js (En Progreso)
 │   ├── portal/        # Aplicación de autogestión para pacientes (Planeado)
-│   └── api/           # Servicios backend (Planeado)
-├── packages/          # Librerías internas compartidas (Planeado)
-│   ├── ui/            # Componentes React compartidos
-│   └── config/        # Configuraciones compartidas de ESLint, Tailwind o Prettier
-├── package.json
-└── turbo.json
+│   └── api/           # Servicios backend en NestJS (Planeado)
+├── packages/          # Librerías y configuraciones compartidas (Planeado)
+│   ├── ui/            # Biblioteca de componentes React comunes
+│   └── config/        # Módulos comunes de configuración (ESLint, Tailwind, etc.)
 ```
 
-## Estado Actual de Desarrollo
+### Directrices de Consistencia Visual y Código
+*   **Sistema de Diseño**: La interfaz de usuario se adhiere de forma estricta a una paleta de 4 colores específicos de marca (`primary` `#0B3B8C`, `secondary` `#52C7B8`, `tertiary` `#F8FAFC` y `neutral` `#64748B`) y tipografías (`Inter` para lectura y `Manrope` para títulos).
 
-**Estado: Desarrollo Temprano (Fase 1)**
+## Licencia
 
-Actualmente estamos construyendo la Landing Page pública (`apps/landing`). 
-*   [x] Configuración del espacio de trabajo del monorepo (Turborepo + pnpm).
-*   [x] Inicialización de Next.js para la app `landing`.
-*   [x] Implementación del sistema de diseño Tailwind CSS v4 (Fuentes: Inter & Manrope, paleta estricta de 4 colores).
-*   [x] Layouts globales y configuración de enrutamiento base (`/specialties`, `/centers`, `/about`).
-*   [x] Construcción de componentes globales (ej. `Header` responsivo con enrutamiento activo).
-*   [ ] Desarrollo de la sección `Hero` y páginas internas (Especialidades, Centros, Acerca de).
-
-## Ejecutar el Proyecto Localmente
-
-Asegúrate de tener instalados [Node.js](https://nodejs.org/) y [pnpm](https://pnpm.io/).
-
-1.  **Instalar dependencias:**
-    ```bash
-    pnpm install
-    ```
-
-2.  **Iniciar el servidor de desarrollo:**
-    ```bash
-    pnpm dev
-    ```
-    Este comando utilizará Turborepo para iniciar todas las aplicaciones de forma concurrente. Puedes ver la Landing page en el puerto que se haya configurado (por ejemplo, `http://localhost:51139`).
-
-## Sistema de Diseño
-La interfaz de usuario (UI) se adhiere estrictamente a una paleta personalizada de 4 colores:
-*   **Primario:** `#0B3B8C`
-*   **Secundario:** `#52C7B8`
-*   **Terciario:** `#F8FAFC`
-*   **Neutral:** `#64748B`
-
-Todo el código está escrito en inglés, manteniendo patrones estrictos de co-localización de componentes basados en las mejores prácticas de Next.js App Router.
+Este proyecto es propiedad intelectual privada y exclusiva de **Agustín Amor (AgusAmor)**. Todos los derechos reservados. Para más detalles, consulta el archivo [LICENSE](file:///c:/Users/Elmo/Desktop/ODUS/LICENSE) en la raíz de este repositorio.
