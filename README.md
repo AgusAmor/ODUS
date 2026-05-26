@@ -28,7 +28,7 @@ El monorepo organiza las aplicaciones y los paquetes de configuración compartid
 ```text
 odus/
 ├── apps/
-│   ├── landing/       # Sitio web público en Next.js (Fase 1 Completada)
+│   ├── landing/       # Sitio web público en Next.js (En Progreso)
 │   ├── portal/        # Aplicación de autogestión para pacientes (Planeado)
 │   └── api/           # Servicios backend en NestJS (Planeado)
 ├── packages/          # Librerías y configuraciones compartidas (Planeado)
