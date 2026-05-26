@@ -20,7 +20,7 @@ La landing page se encuentra actualmente en desarrollo activo (**Fase 1**). Se h
 
 - `app/`: Contiene el App Router de Next.js (rutas principales, layouts, fuentes y estilos globales).
 - `app/specialties/`: Página de especialidades médicas.
-- `app/specialties/components/`: Componentes específicos y exclusivos de la sección de especialidades (`SpecialtiesHero.jsx`, `SpecialtiesEditorial.jsx`, `SpecialtiesCircuit.jsx`, `SpecialtiesTechnology.jsx`).
+- `app/specialties/components/`: Componentes específicos y exclusivos de la sección de especialidades (`SpecialtiesHero.jsx`, `SpecialtiesEditorial.jsx`, `SpecialtiesCircuit.jsx`, `SpecialtiesFacilities.jsx`).
 - `components/`: Componentes modulares y reutilizables globales de la aplicación (ej. `Header.jsx`, `MobileNav.jsx`, `Hero.jsx`, `Specialties.jsx`, `SpecialtyModal.jsx`, `Centers.jsx`, `Institutional.jsx`).
 - `components/useScrollReveal.js`: Hook reutilizable de Intersection Observer para animaciones nativas al scroll.
 - `public/`: Archivos estáticos como imágenes y logos.

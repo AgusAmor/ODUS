@@ -26,6 +26,7 @@ build/
 # misc
 .DS_Store
 *.pem
+copy_images.js
 
 # debug
 npm-debug.log*

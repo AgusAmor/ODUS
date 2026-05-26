@@ -24,9 +24,9 @@ export default function SpecialtiesEditorial({
         >
           <div className="rounded-3xl overflow-hidden shadow-[0_12px_32px_rgba(11,59,140,0.03)] border border-neutral/10 h-100 hover:scale-[1.01] transition-transform duration-300 group">
             <img
-              alt="Cardiología clínica ODUS"
+              alt="Cardiología ecógrafo monitoreo cardíaco ODUS"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuJeZJAvNUEem0H3h2ynqwnBCfgcTuxwYiNRu7r_Y3kuKzZ9vmo5IO7wUfrje9U9Ek0bOrwQON6MtYWD2wW4qx-L2c64nzRS5ff2Zt__OkGE_wYdY9-wNoQ9Omt_DSMwmvZoODPgi4HGCdxGDyjaM2966PoOHRb_CmbncbXGyEW9F06LmesPMqpsgb302bZhHMDVRh_4Ln-JXiFLZMG7AVkOixd6cpXawTQNe2uj5xmcOrz_F-Ie8N7tAnpBTJBA_i7Qm2qECdL_ycx"
+              src="/images/cardiology.png"
             />
           </div>
           <div className="flex flex-col items-start">
@@ -68,9 +68,9 @@ export default function SpecialtiesEditorial({
           </div>
           <div className="rounded-3xl overflow-hidden shadow-[0_12px_32px_rgba(11,59,140,0.03)] border border-neutral/10 h-100 order-1 md:order-2 hover:scale-[1.01] transition-transform duration-300 group">
             <img
-              alt="Ginecología consultorio moderno ODUS"
+              alt="Ginecología transductor ecógrafo ODUS"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5pNYMh9UySPhjzJa6uv6qe1q_r47KzyE3RRiA_SCIRgsxWFhCI0TliOuapNd_KqxzBpZTMIib5gIuW0MRdbYMQ_vRlJqv-gXCLv6Yls_5zVoK_lCe_GFuhVPC_hu0_TWI35poFXdmAu2EsRDdOGJHaJ71Y4WP-6uk-SDGmirlfgYy7a5v86nQ8W_UrH8pKc8qMSnuQdQMw_-62FPVP0LqztCT91GUIW0H5CWHYY2LL5p-HB_YeVjBwzPUiov8_-V-Dq-faspXWgm6"
+              src="/images/gynecology.png"
             />
           </div>
         </div>
@@ -82,9 +82,9 @@ export default function SpecialtiesEditorial({
         >
           <div className="rounded-3xl overflow-hidden shadow-[0_12px_32px_rgba(11,59,140,0.03)] border border-neutral/10 h-100 hover:scale-[1.01] transition-transform duration-300 group">
             <img
-              alt="Otorrinolaringología equipo ODUS"
+              alt="Otorrinolaringología instrumental otoscopio ODUS"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXu-UYFYgjmDaZNpdJJFVnGOpXIhVl3BpdkcfOslOtiZTPw8MTodPRYrllFVAUImf7pcf0WDPdi0aPHrRAUkVnFfizDSpKltZ5WiOG0ZOlZUXvryMflkuWJryYST4cT3QnjDFSuLs22HlPR8tCWrOi0aBkihD6r1o_WpSRchQaoQSM-jV36LIFhf1eU21apQnkkU1SF_G8HBA6_OuH_64TCc-HQpymrNVxRlnwbtnF9opxfxuDPl_Dnso1xeWxM6krZ3xuJkcKiUh3aG"
+              src="/images/ent.png"
             />
           </div>
           <div className="flex flex-col items-start">

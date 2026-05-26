@@ -3,7 +3,7 @@
 import { MdChevronRight, MdOutlineLocalHospital } from "react-icons/md";
 import Link from "next/link";
 
-export default function SpecialtiesTechnology({ tecRef, tecRevealed }) {
+export default function SpecialtiesFacilities({ tecRef, tecRevealed }) {
   return (
     <section
       ref={tecRef}
@@ -69,13 +69,13 @@ export default function SpecialtiesTechnology({ tecRef, tecRevealed }) {
           <div className="lg:col-span-7 w-full">
             <div className="grid grid-cols-2 gap-6 items-center">
               
-              {/* Image 1 with absolute round hospital circle overlay */}
+              {/* Image 1: Reception with absolute round hospital circle overlay */}
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 hover:scale-[1.01] transition-transform duration-300">
                   <img
-                    alt="Clínica médica moderna pasillos ODUS"
+                    alt="Recepción moderna y acogedora de la clínica ODUS"
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8xxU3otLUB_OEZUwBeV5F6pQmHWN-ECcwnEEK5mCwTFPAPzdgiA0OE8NVbKanNO8u4xfrdddIjx5MWXLKCa0RN-pqU4hat_CaEoo_Y8HYi4b9ot3UoUyX20Q0tPK3-V9ELXjWH_JiOJ7_6j0iCwz8yibtNAGmMBFvk_pr4Flv1ZCwS4KhUwQeRWfyIUZdHzUFvJYGrNvkJyhfW7BQEhuf8VJIMmFls_jHJdPIUNWaCnHA8WI6Q15SWoPjMNvnMkILA7vwoxWHg5lG"
+                    src="/images/reception.png"
                   />
                 </div>
                 {/* Visual Circle Badge from Slide */}
@@ -84,12 +84,12 @@ export default function SpecialtiesTechnology({ tecRef, tecRevealed }) {
                 </div>
               </div>
 
-              {/* Image 2 with offset spacing */}
+              {/* Image 2: Comfort Equipment with offset spacing */}
               <div className="rounded-3xl overflow-hidden h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 mt-12 hover:scale-[1.01] transition-transform duration-300">
                 <img
-                  alt="Equipos de diagnóstico médico ODUS"
+                  alt="Tecnología de diagnóstico y confort en consultorio ODUS"
                   className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwzS04QrS9R03GTvxVeSXQLGGNvlwZCWR6Sbd8zjCLTayELZxsDk4cELnIuH2qaNAljcc9wKvLeDFe5pSM2r-PRM2JOVBznDcTwZ-g56fu-6jhv9IHekOq5d_3wLkx-2bCnRw85KjsFM07WPx5QCUr_vtRck3a1vZe0ZmGFc1cGuJtKg8yLU7LxJ9IpqS-avPW7BSDvtEky7xeMzqvpGDcmn9tOgHe7nd0E95nPX-mZNgQXa8r8vKIen95qR9Z273ddqlJSwBzJbA8"
+                  src="/images/comfort.png"
                 />
               </div>
 

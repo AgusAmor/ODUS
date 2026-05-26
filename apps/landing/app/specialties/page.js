@@ -4,7 +4,7 @@ import useScrollReveal from "../hooks/useScrollReveal";
 import SpecialtiesHero from "./components/SpecialtiesHero";
 import SpecialtiesEditorial from "./components/SpecialtiesEditorial";
 import SpecialtiesCircuit from "./components/SpecialtiesCircuit";
-import SpecialtiesTechnology from "./components/SpecialtiesTechnology";
+import SpecialtiesFacilities from "./components/SpecialtiesFacilities";
 
 export default function Specialties() {
   // Setup native scroll reveal hooks for each visual block
@@ -39,8 +39,8 @@ export default function Specialties() {
         circuitoCardsRevealed={circuitoCardsRevealed}
       />
 
-      {/* 4. Tecnología que salva vidas Section */}
-      <SpecialtiesTechnology tecRef={tecRef} tecRevealed={tecRevealed} />
+      {/* 4. Nuestras Instalaciones Section */}
+      <SpecialtiesFacilities tecRef={tecRef} tecRevealed={tecRevealed} />
     </main>
   );
 }
