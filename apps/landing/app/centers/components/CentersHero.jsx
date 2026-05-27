@@ -21,7 +21,10 @@ export default function CentersHero({ heroRef, heroRevealed }) {
           Nuestras Sedes
         </h1>
         <p className="font-body-md text-base md:text-lg text-neutral max-w-xl leading-relaxed">
-          Centro Médico ODUS cuenta con dos sedes estratégicamente ubicadas en Quilmes y alrededores, diseñadas para brindarte atención médica de calidad cerca de tu hogar. Ambas sedes están equipadas con tecnología de última generación y un equipo profesional comprometido con tu bienestar.
+          Centro Médico ODUS cuenta con dos sedes ubicadas en Quilmes, diseñadas
+          para brindarte atención médica de calidad cerca tuyo. Equipadas con
+          tecnología de última generación y un equipo profesional comprometido
+          con tu bienestar.
         </p>
         <div className="flex flex-wrap gap-4 mt-4 w-full sm:w-auto">
           <a
@@ -29,14 +32,18 @@ export default function CentersHero({ heroRef, heroRevealed }) {
             href="#sede-pellegrini"
           >
             <span className="font-bold">Sede Pellegrini</span>
-            <span className="text-xs font-normal opacity-85 mt-1">Sede Principal</span>
+            <span className="text-xs font-normal opacity-85 mt-1">
+              Sede Principal
+            </span>
           </a>
           <a
             className="bg-transparent border-2 border-primary text-primary font-label-md text-label-md px-8 py-3.5 rounded-2xl hover:bg-primary/5 transition-colors duration-200 flex flex-col items-center justify-center text-center font-bold cursor-pointer min-w-44"
             href="#sede-lavalle"
           >
             <span>Sede Lavalle</span>
-            <span className="text-xs font-normal opacity-80 mt-1">Próximamente</span>
+            <span className="text-xs font-normal opacity-80 mt-1">
+              Próximamente
+            </span>
           </a>
         </div>
       </div>
