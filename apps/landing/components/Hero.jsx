@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section
       ref={heroRef}
-      className="relative min-h-230.25 flex items-center justify-center py-section-gap overflow-hidden bg-tertiary"
+      className="relative min-h-fit lg:min-h-175 flex items-center justify-center py-12 md:py-16 overflow-hidden bg-tertiary"
     >
       {/* Decorative background elements */}
       <div className="absolute inset-0 z-0 w-full pointer-events-none">

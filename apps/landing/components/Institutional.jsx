@@ -84,14 +84,14 @@ export default function Institutional() {
 
   return (
     <section
-      className="bg-linear-to-b from-tertiary/30 via-white to-tertiary/20 py-section-gap border-t border-neutral/10 relative overflow-hidden"
+      className="bg-linear-to-b from-tertiary/30 via-white to-tertiary/20 py-12 md:py-16 border-t border-neutral/10 relative overflow-hidden"
       id="institucional"
     >
       {/* Subtle organic background blobs for depth */}
       <div className="absolute top-1/3 left-0 w-80 h-80 bg-primary/5 rounded-full filter blur-3xl -translate-x-1/2 pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-secondary/5 rounded-full filter blur-3xl translate-x-1/3 pointer-events-none" />
 
-      <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-16 relative z-10">
+      <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-10 md:gap-12 relative z-10">
         {/* Header Block */}
         <div
           ref={headerRef}
@@ -153,7 +153,7 @@ export default function Institutional() {
         </div>
 
         {/* Values Block */}
-        <div className="flex flex-col gap-10 w-full border-t border-neutral/10 pt-16">
+        <div className="flex flex-col gap-8 w-full border-t border-neutral/10 pt-10 md:pt-12">
           <div
             ref={valuesHeaderRef}
             className={`text-center flex flex-col items-center gap-3 reveal-fade-up ${valuesHeaderRevealed ? "revealed" : ""}`}

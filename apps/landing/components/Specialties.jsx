@@ -119,7 +119,7 @@ export default function Specialties() {
   return (
     <section
       ref={sectionRef}
-      className="bg-tertiary/50 py-section-gap"
+      className="bg-tertiary/50 py-8 md:py-12"
       id="especialidades"
     >
       <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
