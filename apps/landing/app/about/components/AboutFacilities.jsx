@@ -10,7 +10,6 @@ export default function AboutFacilities({ facilitiesRef, facilitiesRevealed }) {
     >
       {/* Left Column: Overlapping Asymmetric Imagery Grid */}
       <div className="relative order-2 lg:order-1 h-150 w-full shrink-0">
-        
         {/* Background Image: Reception desk */}
         <div className="absolute top-0 right-0 w-3/4 h-3/4 rounded-tr-4xl rounded-bl-4xl rounded-tl-xl rounded-br-xl overflow-hidden shadow-md border border-neutral/10 hover:scale-[1.01] transition-transform duration-300 z-0">
           <img
@@ -38,27 +37,27 @@ export default function AboutFacilities({ facilitiesRef, facilitiesRevealed }) {
       {/* Right Column: Text and descriptions */}
       <div className="flex flex-col gap-8 order-1 lg:order-2 text-left items-start">
         <div>
-          <h2 className="font-headline-lg text-2xl md:text-3xl text-primary font-bold mb-4">
+          <h2 className="font-headline-lg text-2xl md:text-3xl text-primary font-bold mb-2">
             Nuestras Instalaciones
           </h2>
-          <div className="flex gap-2">
-            <span className="w-2 h-2 rounded-full bg-primary"></span>
-            <span className="w-2 h-2 rounded-full bg-primary/65"></span>
-            <span className="w-2 h-2 rounded-full bg-primary/35"></span>
-          </div>
         </div>
 
         {/* Recepción */}
         <div className="flex gap-4 items-start group">
           <div className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-            <MdChevronRight size={22} className="group-hover:translate-x-0.5 transition-transform" />
+            <MdChevronRight
+              size={22}
+              className="group-hover:translate-x-0.5 transition-transform"
+            />
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-headline-md text-lg text-primary font-bold">
               Recepción Moderna y Acogedora
             </h3>
             <p className="font-body-md text-sm md:text-base text-neutral leading-relaxed">
-              Espacios diseñados para tu comodidad desde el primer momento. Nuestra recepción combina calidez y profesionalismo para una experiencia agradable.
+              Espacios diseñados para tu comodidad desde el primer momento.
+              Nuestra recepción combina calidez y profesionalismo para una
+              experiencia agradable.
             </p>
           </div>
         </div>
@@ -66,14 +65,19 @@ export default function AboutFacilities({ facilitiesRef, facilitiesRevealed }) {
         {/* Tecnología */}
         <div className="flex gap-4 items-start group">
           <div className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-            <MdChevronRight size={22} className="group-hover:translate-x-0.5 transition-transform" />
+            <MdChevronRight
+              size={22}
+              className="group-hover:translate-x-0.5 transition-transform"
+            />
           </div>
           <div className="flex flex-col gap-2">
             <h3 className="font-headline-md text-lg text-primary font-bold">
               Tecnología y Confort
             </h3>
             <p className="font-body-md text-sm md:text-base text-neutral leading-relaxed">
-              Salas de diagnóstico equipadas con tecnología de última generación y consultorios diseñados detalladamente para tu absoluto bienestar y tranquilidad.
+              Salas de diagnóstico equipadas con tecnología de última generación
+              y consultorios diseñados detalladamente para tu absoluto bienestar
+              y tranquilidad.
             </p>
           </div>
         </div>
