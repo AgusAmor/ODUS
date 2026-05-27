@@ -150,8 +150,8 @@ export default function Specialties() {
                 className={`bg-white rounded-3xl p-6 border border-neutral/20 shadow-[0_4px_12px_rgba(11,59,140,0.04)] flex flex-col items-start gap-4 translate-y-0 transition-all duration-300 group reveal-fade-up ${delayClass} ${isRevealed ? "revealed" : ""} ${
                   specialty.hasModal
                     ? "hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(11,59_140,0.08)] cursor-pointer"
-                    : "cursor-default"
-                } select-none`}
+                    : ""
+                }`}
               >
                 <div className="bg-primary/5 text-primary w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
                   <Icon size={24} />

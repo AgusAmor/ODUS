@@ -17,7 +17,7 @@ export default function Specialties() {
   const [tecRef, tecRevealed] = useScrollReveal(0.15, "0px 0px -150px 0px");
 
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden select-none cursor-default">
       {/* 1. Hero Section */}
       <SpecialtiesHero heroRef={heroRef} heroRevealed={heroRevealed} />
 

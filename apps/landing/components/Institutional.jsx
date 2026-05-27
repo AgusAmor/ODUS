@@ -111,7 +111,7 @@ export default function Institutional() {
           {/* Misión Card (Left aligned, standard order) */}
           <div
             ref={misionRef}
-            className={`w-full lg:max-w-3xl self-start bg-white/80 backdrop-blur-md border border-neutral/10 border-l-4 border-l-primary p-8 rounded-3xl shadow-[0_4px_20px_rgba(11,59,140,0.015)] flex flex-col sm:flex-row gap-6 items-start translate-x-0 transition-all duration-300 hover:translate-x-1.5 hover:shadow-[0_12px_30px_rgba(11,59,140,0.04)] group reveal-fade-up ${misionRevealed ? "revealed" : ""} select-none cursor-default`}
+            className={`w-full lg:max-w-3xl self-start bg-white/80 backdrop-blur-md border border-neutral/10 border-l-4 border-l-primary p-8 rounded-3xl shadow-[0_4px_20px_rgba(11,59,140,0.015)] flex flex-col sm:flex-row gap-6 items-start translate-x-0 transition-all duration-300 hover:translate-x-1.5 hover:shadow-[0_12px_30px_rgba(11,59,140,0.04)] group reveal-fade-up ${misionRevealed ? "revealed" : ""}`}
           >
             <div className="bg-primary/5 text-primary w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
               <MdOutlineTrackChanges size={28} />
@@ -132,7 +132,7 @@ export default function Institutional() {
           {/* Visión Card (Right aligned, mirrored order) */}
           <div
             ref={visionRef}
-            className={`w-full lg:max-w-3xl self-end bg-white/80 backdrop-blur-md border border-neutral/10 border-r-4 border-r-secondary p-8 rounded-3xl shadow-[0_4px_20px_rgba(11,59,140,0.015)] flex flex-col sm:flex-row-reverse gap-6 items-start translate-x-0 transition-all duration-300 hover:-translate-x-1.5 hover:shadow-[0_12px_30px_rgba(11,59,140,0.04)] group text-left sm:text-right reveal-fade-up ${visionRevealed ? "revealed" : ""} select-none cursor-default`}
+            className={`w-full lg:max-w-3xl self-end bg-white/80 backdrop-blur-md border border-neutral/10 border-r-4 border-r-secondary p-8 rounded-3xl shadow-[0_4px_20px_rgba(11,59,140,0.015)] flex flex-col sm:flex-row-reverse gap-6 items-start translate-x-0 transition-all duration-300 hover:-translate-x-1.5 hover:shadow-[0_12px_30px_rgba(11,59,140,0.04)] group text-left sm:text-right reveal-fade-up ${visionRevealed ? "revealed" : ""}`}
           >
             <div className="bg-secondary/10 text-secondary w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-secondary group-hover:text-white transition-colors duration-300">
               <MdOutlineVisibility size={28} />
@@ -174,7 +174,7 @@ export default function Institutional() {
               return (
                 <div
                   key={idx}
-                  className={`bg-white border border-neutral/10 p-6 rounded-3xl shadow-[0_4px_12px_rgba(11,59,140,0.01)] flex flex-col gap-5 translate-y-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(11,59,140,0.04)] group reveal-fade-up ${delayClass} ${valuesGridRevealed ? "revealed" : ""} select-none cursor-default`}
+                  className={`bg-white border border-neutral/10 p-6 rounded-3xl shadow-[0_4px_12px_rgba(11,59,140,0.01)] flex flex-col gap-5 translate-y-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_16px_32px_rgba(11,59,140,0.04)] group reveal-fade-up ${delayClass} ${valuesGridRevealed ? "revealed" : ""}`}
                 >
                   <div className="text-secondary bg-secondary/5 w-12 h-12 rounded-2xl flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors duration-300 shrink-0">
                     <Icon size={24} />
