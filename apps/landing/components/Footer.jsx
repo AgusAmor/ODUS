@@ -1,16 +1,18 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-tertiary mt-section-gap border-t border-neutral/20 w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max-width mx-auto">
         <div className="flex flex-col gap-4">
-          <a
+          <Link
             className="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2"
             href="/"
           >
             <span className="bg-primary text-white px-2 py-1 rounded-md text-sm tracking-widest font-bold">
               ODUS
             </span>
-          </a>
+          </Link>
           <p className="font-body-sm text-body-sm text-neutral">
             Humanized Precision in Healthcare.
           </p>
@@ -19,18 +21,18 @@ export default function Footer() {
           <h4 className="font-label-md text-label-md text-primary font-semibold">
             Sedes
           </h4>
-          <a
+          <Link
             className="font-body-md text-body-md text-neutral hover:text-primary underline-offset-4 hover:underline transition-all duration-300"
-            href="/centers"
+            href="/centers#sede-pellegrini"
           >
             Sede Pellegrini
-          </a>
-          <a
+          </Link>
+          <Link
             className="font-body-md text-body-md text-neutral hover:text-primary underline-offset-4 hover:underline transition-all duration-300"
-            href="/centers"
+            href="/centers#sede-lavalle"
           >
             Sede Lavalle
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col gap-4">
           <h4 className="font-label-md text-label-md text-primary font-semibold">

@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import useScrollReveal from "../hooks/useScrollReveal";
 import CentersHero from "./components/CentersHero";
 import CentersPellegrini from "./components/CentersPellegrini";
@@ -10,6 +11,31 @@ export default function Centers() {
   const [heroRef, heroRevealed] = useScrollReveal(0, "0px");
   const [pellegriniRef, pellegriniRevealed] = useScrollReveal(0.15, "0px 0px -150px 0px");
   const [lavalleRef, lavalleRevealed] = useScrollReveal(0.15, "0px 0px -150px 0px");
+
+  // Multi-page hash scroll coordinator
+  useEffect(() => {
+    const handleScrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const id = hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    };
+
+    // 1. Run on initial page transition (wait for layout and entry transitions to stabilize)
+    const timer = setTimeout(handleScrollToHash, 250);
+
+    // 2. Listen for subsequent hash changes while on the same page
+    window.addEventListener("hashchange", handleScrollToHash);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("hashchange", handleScrollToHash);
+    };
+  }, []);
 
   return (
     <main className="w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20 flex flex-col gap-24 overflow-hidden">
