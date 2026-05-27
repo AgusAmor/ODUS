@@ -38,7 +38,7 @@ export default function Centers() {
   }, []);
 
   return (
-    <main className="w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20 flex flex-col gap-24 overflow-hidden">
+    <main className="w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-10 md:py-12 flex flex-col gap-12 md:gap-16 overflow-hidden">
       {/* 1. Hero Section */}
       <CentersHero heroRef={heroRef} heroRevealed={heroRevealed} />
 

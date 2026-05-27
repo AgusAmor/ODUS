@@ -12,15 +12,10 @@ export default function CentersHero({ heroRef, heroRevealed }) {
 
       {/* Left Content */}
       <div className="flex flex-col gap-6 z-10 items-start text-left">
-        <div className="flex gap-2.5">
-          <span className="w-3 h-3 rounded-full bg-primary"></span>
-          <span className="w-3 h-3 rounded-full bg-primary/60"></span>
-          <span className="w-3 h-3 rounded-full bg-primary/30"></span>
-        </div>
-        <h1 className="font-headline-display text-3xl md:text-4xl font-extrabold text-primary leading-tight tracking-tight">
+        <h1 className="font-headline-display text-3xl md:text-headline-display font-extrabold text-primary leading-tight tracking-tight">
           Nuestras Sedes
         </h1>
-        <p className="font-body-md text-base md:text-lg text-neutral max-w-xl leading-relaxed">
+        <p className="font-body-lg text-body-lg text-neutral max-w-xl leading-relaxed">
           Centro Médico ODUS cuenta con dos sedes ubicadas en Quilmes, diseñadas
           para brindarte atención médica de calidad cerca tuyo. Equipadas con
           tecnología de última generación y un equipo profesional comprometido

@@ -18,11 +18,11 @@ export default function CentersPellegrini({
     <section
       ref={pellegriniRef}
       id="sede-pellegrini"
-      className={`flex flex-col gap-12 pt-16 reveal-fade-up ${pellegriniRevealed ? "revealed" : ""}`}
+      className={`flex flex-col gap-8 pt-0 select-none cursor-default reveal-fade-up ${pellegriniRevealed ? "revealed" : ""}`}
     >
       {/* Header Info */}
       <div className="flex flex-col gap-2 items-start text-left">
-        <h2 className="font-headline-lg text-2xl md:text-3xl text-primary font-bold">
+        <h2 className="font-headline-lg text-2xl text-primary font-bold">
           Sede Pellegrini
         </h2>
         <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-neutral font-body-md mt-1 items-center">
@@ -63,7 +63,7 @@ export default function CentersPellegrini({
                   size={40}
                   className="text-secondary shrink-0"
                 />
-                <h4 className="font-headline-md text-xl lg:text-2xl leading-tight font-extrabold">
+                <h4 className="font-headline-md text-xl lg:text-xl leading-tight font-extrabold">
                   Agenda tu visita
                 </h4>
               </div>
