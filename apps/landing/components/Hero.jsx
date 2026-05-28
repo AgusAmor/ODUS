@@ -42,14 +42,24 @@ export default function Hero() {
             <div
               className={`flex flex-wrap gap-4 reveal-fade-up transition-delay-150 ${isRevealed ? "revealed" : ""}`}
             >
-              <button className="bg-primary text-white font-label-md text-label-md px-8 py-4 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm flex items-center gap-2 cursor-pointer">
+              <a
+                href="https://wa.me/5491128331920"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary text-white font-label-md text-label-md px-8 py-4 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm items-center gap-2 cursor-pointer text-center inline-flex"
+              >
                 <MdCalendarMonth size={20} />
-                Solicitar Turno
-              </button>
-              <button className="bg-secondary text-primary font-label-md text-label-md px-8 py-4 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm flex items-center gap-2 cursor-pointer">
+                Agendar turno
+              </a>
+              <a
+                href="https://wa.me/5491128331920"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-secondary text-primary font-label-md text-label-md px-8 py-4 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm items-center gap-2 cursor-pointer text-center inline-flex"
+              >
                 <FaWhatsapp size={20} />
                 WhatsApp
-              </button>
+              </a>
             </div>
           </div>
 

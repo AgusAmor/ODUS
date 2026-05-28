@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Footer() {
@@ -8,6 +10,12 @@ export default function Footer() {
           <Link
             className="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2"
             href="/"
+            onClick={(e) => {
+              if (typeof window !== "undefined" && window.location.pathname === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
           >
             <span className="bg-primary text-white px-2 py-1 rounded-md text-sm tracking-widest font-bold">
               ODUS

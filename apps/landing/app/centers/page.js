@@ -22,6 +22,8 @@ export default function Centers() {
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
         }
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
     };
 

@@ -31,7 +31,7 @@ export default function MobileNav() {
     },
     {
       name: "Turnos",
-      href: "#",
+      href: "https://wa.me/5491128331920",
       iconOutline: MdOutlineCalendarMonth,
       iconFilled: MdCalendarMonth,
     },
@@ -54,6 +54,12 @@ export default function MobileNav() {
             <Link
               key={idx}
               href={item.href}
+              onClick={(e) => {
+                if (pathname === item.href) {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
               className={`flex flex-col items-center justify-center scale-90 active:scale-100 transition-all duration-200 rounded-xl px-4 py-1 cursor-pointer ${
                 isActive
                   ? "text-primary font-semibold"

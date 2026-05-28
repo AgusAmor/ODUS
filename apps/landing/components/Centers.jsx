@@ -82,13 +82,23 @@ export default function Centers() {
               </div>
 
               <div className="flex flex-wrap gap-4 mt-4">
-                <button className="bg-primary text-white font-label-md text-label-md px-6 py-3 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm cursor-pointer">
+                <a
+                  href="https://wa.me/5491128331920"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary text-white font-label-md text-label-md px-6 py-3 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm cursor-pointer text-center inline-block"
+                >
                   Agendar turno
-                </button>
-                <button className="border border-neutral/30 bg-white text-primary font-label-md text-label-md px-6 py-3 rounded-2xl hover:bg-neutral/5 hover:scale-95 transition-transform duration-200 flex items-center gap-2 cursor-pointer">
+                </a>
+                <a
+                  href="https://maps.google.com/?q=Pellegrini+Quilmes+ODUS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-neutral/30 bg-white text-primary font-label-md text-label-md px-6 py-3 rounded-2xl hover:bg-neutral/5 hover:scale-95 transition-transform duration-200 flex items-center gap-2 cursor-pointer text-center"
+                >
                   <span>Cómo llegar</span>
                   <MdOutlineDirections size={18} />
-                </button>
+                </a>
               </div>
             </div>
           </div>

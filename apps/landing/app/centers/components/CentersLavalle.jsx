@@ -7,7 +7,7 @@ export default function CentersLavalle({ lavalleRef, lavalleRevealed }) {
     <section
       ref={lavalleRef}
       id="sede-lavalle"
-      className={`mt-0 select-none cursor-default reveal-fade-up ${lavalleRevealed ? "revealed" : ""}`}
+      className={`mt-0 scroll-mt-24 md:scroll-mt-28 select-none cursor-default reveal-fade-up ${lavalleRevealed ? "revealed" : ""}`}
     >
       <div className="bg-white/70 backdrop-blur-md rounded-4xl p-8 md:p-12 border border-neutral/10 shadow-[0_8px_24px_rgba(11,59,140,0.02)] relative overflow-hidden group hover:scale-[1.005] transition-transform duration-300">
         {/* Decorative background radial glows */}

@@ -18,7 +18,7 @@ export default function CentersPellegrini({
     <section
       ref={pellegriniRef}
       id="sede-pellegrini"
-      className={`flex flex-col gap-8 pt-0 select-none cursor-default reveal-fade-up ${pellegriniRevealed ? "revealed" : ""}`}
+      className={`flex flex-col gap-8 pt-0 scroll-mt-24 md:scroll-mt-28 select-none cursor-default reveal-fade-up ${pellegriniRevealed ? "revealed" : ""}`}
     >
       {/* Header Info */}
       <div className="flex flex-col gap-2 items-start text-left">
@@ -72,9 +72,14 @@ export default function CentersPellegrini({
                 consulta con nuestros especialistas.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 w-full">
-                <button className="bg-white text-primary py-4 px-8 rounded-2xl font-label-md text-label-md font-bold hover:bg-tertiary hover:scale-95 transition-all shadow-md active:scale-95 grow cursor-pointer text-center">
-                  Reservar Turno
-                </button>
+                <a
+                  href="https://wa.me/5491128331920"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-primary py-4 px-8 rounded-2xl font-label-md text-label-md font-bold hover:bg-tertiary hover:scale-95 transition-all shadow-md active:scale-95 grow cursor-pointer text-center inline-block"
+                >
+                  Agendar turno
+                </a>
                 <a
                   href="https://maps.google.com/?q=Pellegrini+Quilmes+ODUS"
                   target="_blank"
