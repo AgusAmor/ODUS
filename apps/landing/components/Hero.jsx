@@ -74,7 +74,7 @@ export default function Hero() {
 
             {/* Glassmorphic Card 1 */}
             <div
-              className={`absolute -left-10 top-20 bg-white/80 backdrop-blur-xl p-4 rounded-2xl border border-neutral/20 shadow-sm z-20 flex items-center gap-4 reveal-fade-up transition-delay-225 ${isRevealed ? "revealed" : ""}`}
+              className={`absolute -left-10 top-20 bg-white/80 backdrop-blur-xl p-4 rounded-2xl border border-neutral/20 shadow-sm z-20 flex items-center gap-4 cursor-default select-none reveal-fade-up transition-delay-225 ${isRevealed ? "revealed" : ""}`}
             >
               <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center text-secondary">
                 <MdOutlineMonitorHeart size={24} />
@@ -91,7 +91,7 @@ export default function Hero() {
 
             {/* Glassmorphic Card 2 */}
             <div
-              className={`absolute -right-10 bottom-20 bg-white/80 backdrop-blur-xl p-4 rounded-2xl border border-neutral/20 shadow-sm z-20 flex items-center gap-4 reveal-fade-up transition-delay-300 ${isRevealed ? "revealed" : ""}`}
+              className={`absolute -right-10 bottom-20 bg-white/80 backdrop-blur-xl p-4 rounded-2xl border border-neutral/20 shadow-sm z-20 flex items-center gap-4 cursor-default select-none reveal-fade-up transition-delay-300 ${isRevealed ? "revealed" : ""}`}
             >
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
                 <MdOutlineAccessTime size={24} />

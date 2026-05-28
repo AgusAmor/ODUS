@@ -36,7 +36,7 @@ export default function Centers() {
           {/* Sede Pellegrini */}
           <div
             ref={pellegriniRef}
-            className={`flex flex-col lg:flex-row gap-4 lg:gap-16 items-center bg-white rounded-4xl p-6 lg:p-12 border border-neutral/10 shadow-[0_8px_30px_rgb(11,59,140,0.02)] reveal-fade-up ${pellegriniRevealed ? "revealed" : ""}`}
+            className={`flex flex-col lg:flex-row gap-4 lg:gap-16 items-center bg-white rounded-4xl p-6 lg:p-12 border border-neutral/10 shadow-[0_8px_30px_rgb(11,59,140,0.02)] cursor-default select-none reveal-fade-up ${pellegriniRevealed ? "revealed" : ""}`}
           >
             <div className="w-full lg:w-1/2 aspect-video lg:aspect-square rounded-3xl overflow-hidden relative">
               <img
@@ -106,7 +106,7 @@ export default function Centers() {
           {/* Sede Lavalle (Coming Soon) */}
           <div
             ref={lavalleRef}
-            className={`bg-white/70 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-neutral/15 shadow-[0_10px_40px_rgba(11,59,140,0.04)] relative overflow-hidden w-full reveal-fade-up ${lavalleRevealed ? "revealed" : ""}`}
+            className={`bg-white/70 backdrop-blur-md rounded-3xl p-8 md:p-12 border border-neutral/15 shadow-[0_10px_40px_rgba(11,59,140,0.04)] relative overflow-hidden w-full cursor-default select-none reveal-fade-up ${lavalleRevealed ? "revealed" : ""}`}
           >
             {/* Decorative background element */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full filter blur-3xl opacity-60 translate-x-1/2 -translate-y-1/2 pointer-events-none" />

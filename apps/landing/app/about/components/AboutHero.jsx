@@ -22,7 +22,7 @@ export default function AboutHero({ heroRef, heroRevealed }) {
             src="/images/centers_exterior.png"
           />
         </div>
-        
+
         {/* Floating circular icon badge */}
         <div className="absolute -bottom-6 -right-6 bg-primary text-white w-16 h-16 rounded-full shadow-lg hidden md:flex items-center justify-center border-4 border-white hover:scale-110 transition-transform duration-300">
           <MdOutlineMedicalServices size={28} className="text-secondary" />
@@ -34,13 +34,12 @@ export default function AboutHero({ heroRef, heroRevealed }) {
         <h1 className="font-headline-display text-3xl md:text-4xl font-extrabold text-primary leading-tight tracking-tight">
           Quiénes Somos
         </h1>
-        <div className="flex gap-2">
-          <span className="w-2 h-2 rounded-full bg-primary"></span>
-          <span className="w-2 h-2 rounded-full bg-primary/65"></span>
-          <span className="w-2 h-2 rounded-full bg-primary/35"></span>
-        </div>
         <p className="font-body-md text-base md:text-lg text-neutral leading-relaxed max-w-xl">
-          ODUS comenzó como una clínica odontológica reconocida por su excelencia en atención al paciente. Con el tiempo, hemos evolucionado hacia un centro de atención médica ambulatoria integral, manteniendo siempre nuestros valores fundamentales: calidad en cada servicio, cercanía con nuestros pacientes y profesionalismo en cada consulta.
+          ODUS comenzó como una clínica odontológica reconocida por su
+          excelencia en atención al paciente. Con el tiempo, hemos evolucionado
+          hacia un centro de atención médica ambulatoria integral, manteniendo
+          siempre nuestros valores fundamentales: calidad en cada servicio,
+          cercanía con nuestros pacientes y profesionalismo en cada consulta.
         </p>
       </div>
     </section>
