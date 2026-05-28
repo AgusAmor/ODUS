@@ -20,24 +20,22 @@ export default function SpecialtiesFacilities({ tecRef, tecRevealed }) {
               Nuestras Instalaciones
             </h2>
 
-            {/* Opacity dots indicators */}
-            <div className="flex gap-2.5 mb-8">
-              <span className="w-3 h-3 rounded-full bg-primary"></span>
-              <span className="w-3 h-3 rounded-full bg-primary/60"></span>
-              <span className="w-3 h-3 rounded-full bg-primary/30"></span>
-            </div>
-
             {/* Reception Block */}
             <div className="flex gap-4 items-start mb-6 group text-left">
               <div className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <MdChevronRight size={22} className="group-hover:translate-x-0.5 transition-transform" />
+                <MdChevronRight
+                  size={22}
+                  className="group-hover:translate-x-0.5 transition-transform"
+                />
               </div>
               <div>
                 <h3 className="text-primary font-bold text-lg mb-2 font-headline-md">
                   Recepción Moderna y Acogedora
                 </h3>
                 <p className="text-neutral text-sm leading-relaxed">
-                  Espacios diseñados para tu comodidad desde el primer momento. Nuestra recepción combina calidez y profesionalismo para una experiencia sumamente agradable.
+                  Espacios diseñados para tu comodidad desde el primer momento.
+                  Nuestra recepción combina calidez y profesionalismo para una
+                  experiencia sumamente agradable.
                 </p>
               </div>
             </div>
@@ -45,14 +43,19 @@ export default function SpecialtiesFacilities({ tecRef, tecRevealed }) {
             {/* Technology & Comfort Block */}
             <div className="flex gap-4 items-start mb-8 group text-left">
               <div className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                <MdChevronRight size={22} className="group-hover:translate-x-0.5 transition-transform" />
+                <MdChevronRight
+                  size={22}
+                  className="group-hover:translate-x-0.5 transition-transform"
+                />
               </div>
               <div>
                 <h3 className="text-primary font-bold text-lg mb-2 font-headline-md">
                   Tecnología y Confort
                 </h3>
                 <p className="text-neutral text-sm leading-relaxed">
-                  Salas de diagnóstico equipadas con tecnología de precisión y consultorios diseñados detalladamente para tu absoluto bienestar y tranquilidad.
+                  Salas de diagnóstico equipadas con tecnología de precisión y
+                  consultorios diseñados detalladamente para tu absoluto
+                  bienestar y tranquilidad.
                 </p>
               </div>
             </div>
@@ -68,7 +71,6 @@ export default function SpecialtiesFacilities({ tecRef, tecRevealed }) {
           {/* Asymmetric Imagery Grid with overlapping slide circular badge */}
           <div className="lg:col-span-7 w-full">
             <div className="grid grid-cols-2 gap-6 items-center">
-              
               {/* Image 1: Reception with absolute round hospital circle overlay */}
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 hover:scale-[1.01] transition-transform duration-300">
@@ -92,7 +94,6 @@ export default function SpecialtiesFacilities({ tecRef, tecRevealed }) {
                   src="/images/comfort.png"
                 />
               </div>
-
             </div>
           </div>
         </div>

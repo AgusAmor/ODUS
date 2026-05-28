@@ -18,13 +18,6 @@ export default function ContactHero({ heroRef, heroRevealed }) {
       <div className="max-w-container-max-width mx-auto w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         {/* Left Column: Contact text and cards */}
         <div className="lg:col-span-7 flex flex-col gap-6 z-10 items-start text-left">
-          {/* Opacity dots indicators */}
-          <div className="flex gap-2.5">
-            <span className="w-3 h-3 rounded-full bg-primary"></span>
-            <span className="w-3 h-3 rounded-full bg-primary/60"></span>
-            <span className="w-3 h-3 rounded-full bg-primary/30"></span>
-          </div>
-
           <h1 className="font-headline-display text-3xl md:text-headline-display font-extrabold text-primary leading-tight tracking-tight">
             Contactanos
           </h1>
