@@ -44,12 +44,12 @@ export default function Footer() {
           >
             Portal del Paciente
           </a>
-          <a
+          <Link
             className="font-body-md text-body-md text-neutral hover:text-primary underline-offset-4 hover:underline transition-all duration-300"
-            href="#"
+            href="/contact"
           >
             Contacto
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col gap-4">
           <h4 className="font-label-md text-label-md text-primary font-semibold">
