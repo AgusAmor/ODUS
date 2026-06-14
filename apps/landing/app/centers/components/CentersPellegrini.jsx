@@ -80,7 +80,7 @@ export default function CentersPellegrini({
                 >
                   Agendar turno
                 </a>
-                <a
+                {/* <a
                   href="https://maps.google.com/?q=Pellegrini+Quilmes+ODUS"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -88,7 +88,7 @@ export default function CentersPellegrini({
                 >
                   <MdOutlineMap size={20} />
                   Cómo llegar
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
