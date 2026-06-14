@@ -9,8 +9,8 @@ export default function Header() {
 
   const navLinks = [
     { name: "Inicio", href: "/" },
-    { name: "Especialidades", href: "/specialties" },
     { name: "Sedes", href: "/centers" },
+    { name: "Especialidades", href: "/specialties" },
     { name: "Nosotros", href: "/about" },
   ];
 
@@ -73,9 +73,9 @@ export default function Header() {
           >
             Agendar turno
           </a>
-          <button className="text-neutral hover:bg-primary/10 rounded-full p-2 transition-colors flex items-center justify-center cursor-pointer">
+          {/* <button className="text-neutral hover:bg-primary/10 rounded-full p-2 transition-colors flex items-center justify-center cursor-pointer">
             <MdAccountCircle size={28} />
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

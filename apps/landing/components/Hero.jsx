@@ -51,7 +51,7 @@ export default function Hero() {
                 <MdCalendarMonth size={20} />
                 Agendar turno
               </a>
-              <a
+              {/* <a
                 href="https://wa.me/5491128331920"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export default function Hero() {
               >
                 <FaWhatsapp size={20} />
                 WhatsApp
-              </a>
+              </a> */}
             </div>
           </div>
 
