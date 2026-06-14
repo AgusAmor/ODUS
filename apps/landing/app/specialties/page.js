@@ -4,7 +4,6 @@ import useScrollReveal from "../hooks/useScrollReveal";
 import SpecialtiesHero from "./components/SpecialtiesHero";
 import SpecialtiesEditorial from "./components/SpecialtiesEditorial";
 import SpecialtiesCircuit from "./components/SpecialtiesCircuit";
-import SpecialtiesFacilities from "./components/SpecialtiesFacilities";
 
 export default function Specialties() {
   // Setup native scroll reveal hooks for each visual block
@@ -14,7 +13,6 @@ export default function Specialties() {
   const [otoriRef, otoriRevealed] = useScrollReveal(0.15, "0px 0px -150px 0px");
   const [circuitoHeaderRef, circuitoHeaderRevealed] = useScrollReveal(0.1, "0px 0px -100px 0px");
   const [circuitoCardsRef, circuitoCardsRevealed] = useScrollReveal(0.15, "0px 0px -120px 0px");
-  const [tecRef, tecRevealed] = useScrollReveal(0.15, "0px 0px -150px 0px");
 
   return (
     <main className="overflow-hidden select-none cursor-default">
@@ -38,9 +36,6 @@ export default function Specialties() {
         circuitoCardsRef={circuitoCardsRef}
         circuitoCardsRevealed={circuitoCardsRevealed}
       />
-
-      {/* 4. Nuestras Instalaciones Section */}
-      <SpecialtiesFacilities tecRef={tecRef} tecRevealed={tecRevealed} />
     </main>
   );
 }

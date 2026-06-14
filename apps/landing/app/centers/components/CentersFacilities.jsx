@@ -3,11 +3,11 @@
 import { MdChevronRight, MdOutlineLocalHospital } from "react-icons/md";
 import Link from "next/link";
 
-export default function SpecialtiesFacilities({ tecRef, tecRevealed }) {
+export default function CentersFacilities({ facilitiesRef, facilitiesRevealed }) {
   return (
     <section
-      ref={tecRef}
-      className={`py-section-gap px-margin-mobile md:px-margin-desktop bg-tertiary/30 overflow-hidden relative reveal-fade-up ${tecRevealed ? "revealed" : ""}`}
+      ref={facilitiesRef}
+      className={`py-section-gap px-margin-mobile md:px-margin-desktop bg-tertiary/30 overflow-hidden relative reveal-fade-up ${facilitiesRevealed ? "revealed" : ""}`}
     >
       {/* Decorative subtle background blob */}
       <div className="absolute top-1/2 left-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl opacity-60 -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
@@ -61,10 +61,10 @@ export default function SpecialtiesFacilities({ tecRef, tecRevealed }) {
             </div>
 
             <Link
-              href="/centers"
+              href="/specialties"
               className="bg-primary text-white font-label-md text-label-md px-8 py-4 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm inline-block cursor-pointer"
             >
-              Ver Sedes
+              Ver Especialidades
             </Link>
           </div>
 

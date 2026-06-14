@@ -5,12 +5,14 @@ import useScrollReveal from "../hooks/useScrollReveal";
 import CentersHero from "./components/CentersHero";
 import CentersPellegrini from "./components/CentersPellegrini";
 import CentersLavalle from "./components/CentersLavalle";
+import CentersFacilities from "./components/CentersFacilities";
 
 export default function Centers() {
   // Set up native once-off scroll reveal observers
   const [heroRef, heroRevealed] = useScrollReveal(0, "0px");
   const [pellegriniRef, pellegriniRevealed] = useScrollReveal(0.15, "0px 0px -150px 0px");
   const [lavalleRef, lavalleRevealed] = useScrollReveal(0.15, "0px 0px -150px 0px");
+  const [facilitiesRef, facilitiesRevealed] = useScrollReveal(0.15, "0px 0px -150px 0px");
 
   // Multi-page hash scroll coordinator
   useEffect(() => {
@@ -49,6 +51,9 @@ export default function Centers() {
 
       {/* 3. Sede Lavalle Section */}
       <CentersLavalle lavalleRef={lavalleRef} lavalleRevealed={lavalleRevealed} />
+
+      {/* 4. Nuestras Instalaciones Section */}
+      <CentersFacilities facilitiesRef={facilitiesRef} facilitiesRevealed={facilitiesRevealed} />
     </main>
   );
 }
