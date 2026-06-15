@@ -1,11 +1,11 @@
 "use client";
 
-export default function SpecialtiesCircuit({
-  circuitoHeaderRef,
-  circuitoHeaderRevealed,
-  circuitoCardsRef,
-  circuitoCardsRevealed,
-}) {
+import useScrollReveal from "../app/hooks/useScrollReveal";
+
+export default function SpecialtiesCircuit() {
+  const [circuitoHeaderRef, circuitoHeaderRevealed] = useScrollReveal(0.1, "0px 0px -100px 0px");
+  const [circuitoCardsRef, circuitoCardsRevealed] = useScrollReveal(0.15, "0px 0px -120px 0px");
+
   return (
     <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-tertiary">
       <div className="max-w-container-max-width mx-auto">
@@ -14,11 +14,10 @@ export default function SpecialtiesCircuit({
           className={`text-center mb-16 reveal-fade-up ${circuitoHeaderRevealed ? "revealed" : ""}`}
         >
           <h2 className="font-headline-display text-2xl md:text-headline-display text-primary font-bold mb-4">
-            Tu Circuito de Salud
+            Nuestro Modelo de Atención
           </h2>
           <p className="font-body-lg text-body-lg text-neutral max-w-2xl mx-auto leading-relaxed">
-            Así es como coordinamos nuestras especialidades para ofrecerte una
-            atención fluida y sin interrupciones.
+            Acompañamos a cada paciente en un proceso integral diseñado para identificar su problema y brindarle la solución en un mismo lugar.
           </p>
         </div>
 

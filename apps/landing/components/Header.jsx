@@ -9,8 +9,8 @@ export default function Header() {
 
   const navLinks = [
     { name: "Inicio", href: "/" },
-    { name: "Sedes", href: "/centers" },
     { name: "Especialidades", href: "/specialties" },
+    { name: "Sedes", href: "/centers" },
     { name: "Nosotros", href: "/about" },
   ];
 
