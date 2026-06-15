@@ -3,8 +3,7 @@
 import useScrollReveal from "../hooks/useScrollReveal";
 import SpecialtiesHero from "./components/SpecialtiesHero";
 import SpecialtiesEditorial from "./components/SpecialtiesEditorial";
-import SpecialtiesCircuit from "../../components/Circuit";
-
+import SpecialtyWorkflows from "./components/SpecialtyWorkflows";
 export default function Specialties() {
   // Setup native scroll reveal hooks for each visual block
   const [heroRef, heroRevealed] = useScrollReveal(0, "0px");
@@ -26,6 +25,9 @@ export default function Specialties() {
         otoriRef={otoriRef}
         otoriRevealed={otoriRevealed}
       />
+
+      {/* 3. Flujos de Atención por Especialidad */}
+      <SpecialtyWorkflows />
     </main>
   );
 }
