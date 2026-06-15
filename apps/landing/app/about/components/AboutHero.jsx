@@ -35,11 +35,7 @@ export default function AboutHero({ heroRef, heroRevealed }) {
           Quiénes Somos
         </h1>
         <p className="font-body-md text-base md:text-lg text-neutral leading-relaxed max-w-xl">
-          ODUS comenzó como una clínica odontológica reconocida por su
-          excelencia en atención al paciente. Con el tiempo, hemos evolucionado
-          hacia un centro de atención médica ambulatoria integral, manteniendo
-          siempre nuestros valores fundamentales: calidad en cada servicio,
-          cercanía con nuestros pacientes y profesionalismo en cada consulta.
+          En ODUS Centro Médico evolucionamos de nuestra reconocida trayectoria odontológica hacia un modelo de atención médica ambulatoria integral. Brindamos una cobertura de salud eficiente y centrada en el paciente, unificando especialidades y diagnóstico avanzado en un circuito único. Con tecnología innovadora y calidez humana, buscamos consolidarnos como el centro médico de referencia en Quilmes y zona sur.
         </p>
       </div>
     </section>
