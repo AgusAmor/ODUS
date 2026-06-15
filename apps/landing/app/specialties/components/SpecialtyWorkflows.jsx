@@ -60,7 +60,7 @@ export default function SpecialtyWorkflows() {
           className={`text-center mb-16 reveal-fade-up ${headerRevealed ? "revealed" : ""}`}
         >
           <h2 className="font-headline-display text-2xl md:text-3xl text-primary font-bold mb-4">
-            Flujos de Atención por Especialidad
+            Tu Circuito de Salud
           </h2>
           <p className="font-body-lg text-body-lg text-neutral max-w-2xl mx-auto leading-relaxed">
             Conocé cómo adaptamos nuestro modelo de atención integral a las necesidades específicas de cada área médica.
