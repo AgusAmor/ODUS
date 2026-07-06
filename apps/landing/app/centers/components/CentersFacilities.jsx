@@ -16,15 +16,15 @@ export default function CentersFacilities({
       <div className="absolute top-1/2 left-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl opacity-60 -translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
       <div className="max-w-container-max-width mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
           <div className="lg:col-span-5 flex flex-col items-start pr-lg-8">
-            <h2 className="font-headline-display text-3xl md:text-headline-display text-primary font-extrabold mb-6 leading-tight tracking-tight">
+            <h2 className="font-headline-display text-3xl md:text-headline-display text-primary font-extrabold mb-4 md:mb-6 leading-tight tracking-tight">
               Nuestras Instalaciones
             </h2>
 
             {/* Reception Block */}
-            <div className="flex gap-4 items-start mb-6 group text-left">
+            <div className="flex gap-3 md:gap-4 items-start mb-4 md:mb-6 group text-left">
               <div className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                 <MdChevronRight
                   size={22}
@@ -44,7 +44,7 @@ export default function CentersFacilities({
             </div>
 
             {/* Technology & Comfort Block */}
-            <div className="flex gap-4 items-start mb-8 group text-left">
+            <div className="flex gap-3 md:gap-4 items-start mb-6 md:mb-8 group text-left">
               <div className="w-10 h-10 rounded-xl bg-primary/5 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                 <MdChevronRight
                   size={22}
@@ -72,11 +72,11 @@ export default function CentersFacilities({
           </div>
 
           {/* Asymmetric Imagery Grid with overlapping slide circular badge */}
-          <div className="lg:col-span-7 w-full">
-            <div className="grid grid-cols-2 gap-6 items-center">
+          <div className="hidden lg:col-span-7 md:block w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
               {/* Image 1: Reception with absolute round hospital circle overlay */}
               <div className="relative">
-                <div className="rounded-3xl overflow-hidden h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 hover:scale-[1.01] transition-transform duration-300">
+                <div className="rounded-3xl overflow-hidden h-64 md:h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 hover:scale-[1.01] transition-transform duration-300">
                   <img
                     alt="Recepción moderna y acogedora de la clínica ODUS"
                     className="w-full h-full object-cover"
@@ -90,7 +90,7 @@ export default function CentersFacilities({
               </div>
 
               {/* Image 2: Comfort Equipment with offset spacing */}
-              <div className="rounded-3xl overflow-hidden h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 mt-12 hover:scale-[1.01] transition-transform duration-300">
+              <div className="rounded-3xl overflow-hidden h-64 md:h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 md:mt-12 hover:scale-[1.01] transition-transform duration-300">
                 <img
                   alt="Tecnología de diagnóstico y confort en consultorio ODUS"
                   className="w-full h-full object-cover"

@@ -6,7 +6,7 @@ Este repositorio contiene la solución tecnológica integral para el **Centro M�
 
 El desarrollo del proyecto se divide en dos fases estratégicas:
 
-1.  **Fase 1 - Landing Page pública (En curso)**: Un portal web de alto rendimiento y optimización SEO orientado a presentar las especialidades médicas, sedes, profesionales y la información institucional del centro.
+1.  **Fase 1 - Landing Page pública (En curso)**: Un portal web de alto rendimiento, optimización SEO y diseño completamente responsivo (Mobile-First), orientado a presentar las especialidades médicas, sedes, profesionales y la información institucional del centro.
 2.  **Fase 2 - Sistema de Gestión de Clínica (Planificado)**: Una reconstrucción integral desde cero del sistema heredado en PHP, compuesto por:
     *   **Portal del Paciente**: Autogestión de turnos médicos y consulta de resultados de estudios.
     *   **Intranet Administrativa**: Panel de control interactivo para la gestión diaria de agendas médicas, recepcionistas e historial clínico digital.

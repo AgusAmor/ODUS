@@ -19,11 +19,11 @@ export default function Header() {
     } else {
       // Primero redirige a la nueva página sin alterar el scroll
       router.push(href, { scroll: false });
-      
+
       // Le da a Next.js un instante para montar el nuevo DOM y luego sube suavemente
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-      }, 150); 
+      }, 150);
     }
   };
 
@@ -133,7 +133,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 top-[60px] bg-tertiary/95 backdrop-blur-2xl z-40 md:hidden flex flex-col pt-8 px-8 gap-8 transition-all duration-300 ease-in-out border-t border-neutral/10 ${
+        className={`fixed inset-0 top-15 bg-tertiary/95 backdrop-blur-2xl z-40 md:hidden flex flex-col pt-8 px-8 gap-8 transition-all duration-300 ease-in-out border-t border-neutral/10 ${
           isMobileMenuOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-4 pointer-events-none"
@@ -148,7 +148,9 @@ export default function Header() {
                   href={link.href}
                   onClick={(e) => handleNavigation(e, link.href)}
                   className={`text-2xl font-extrabold transition-colors block ${
-                    isActive ? "text-primary" : "text-neutral hover:text-primary"
+                    isActive
+                      ? "text-primary"
+                      : "text-neutral hover:text-primary"
                   }`}
                 >
                   {link.name}
