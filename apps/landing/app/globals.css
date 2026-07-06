@@ -19,20 +19,20 @@
   --font-headline-lg: var(--font-heading);
   --font-headline-md: var(--font-heading);
 
-  /* Font Sizes */
-  --font-size-headline-display: 48px;
-  --font-size-headline-lg: 32px;
-  --font-size-headline-md: 24px;
-  --font-size-body-lg: 18px;
-  --font-size-body-md: 16px;
+  /* Font Sizes - Responsive Fluid Typography */
+  --font-size-headline-display: clamp(32px, 5vw, 52px);
+  --font-size-headline-lg: clamp(24px, 4vw, 32px);
+  --font-size-headline-md: clamp(20px, 3vw, 26px);
+  --font-size-body-lg: clamp(16px, 2vw, 18px);
+  --font-size-body-md: clamp(14px, 1.5vw, 16px);
   --font-size-label-md: 14px;
   --font-size-label-sm: 12px;
 
-  /* ODUS Spacing System */
-  --spacing-section-gap: 80px;
-  --spacing-margin-desktop: 40px;
-  --spacing-gutter: 24px;
-  --spacing-margin-mobile: 20px;
+  /* ODUS Spacing System - Responsive Fluid Spacing */
+  --spacing-section-gap: clamp(48px, 8vw, 96px);
+  --spacing-margin-desktop: clamp(32px, 5vw, 64px);
+  --spacing-gutter: clamp(16px, 3vw, 32px);
+  --spacing-margin-mobile: clamp(16px, 4vw, 24px);
   --max-width-container-max-width: 1280px;
 }
 
