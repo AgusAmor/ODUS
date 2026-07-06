@@ -153,7 +153,7 @@ export default function Specialties() {
                     : "cursor-default select-none"
                 }`}
               >
-                <div className="bg-primary/5 text-primary w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors shrink-0">
+                <div className="bg-primary/5 text-primary w-12 h-12 rounded-xl flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors shrink-0">
                   <Icon size={24} />
                 </div>
                 <h3 className="font-headline-md text-headline-md text-primary font-bold">
@@ -183,7 +183,7 @@ export default function Specialties() {
 
                 {/* Click for info indicator */}
                 {specialty.hasModal && (
-                  <div className="mt-auto w-full pt-4 border-t border-dashed border-neutral/10 flex justify-center items-center text-xs font-bold text-neutral/60 group-hover:text-primary transition-colors uppercase tracking-wider">
+                  <div className="mt-auto w-full pt-4 border-t border-dashed border-neutral/10 flex justify-center items-center text-xs font-bold text-neutral/60 group-hover:text-secondary transition-colors uppercase tracking-wider">
                     Click para más información
                   </div>
                 )}

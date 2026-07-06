@@ -3,7 +3,10 @@
 import { MdChevronRight, MdOutlineLocalHospital } from "react-icons/md";
 import Link from "next/link";
 
-export default function CentersFacilities({ facilitiesRef, facilitiesRevealed }) {
+export default function CentersFacilities({
+  facilitiesRef,
+  facilitiesRevealed,
+}) {
   return (
     <section
       ref={facilitiesRef}
