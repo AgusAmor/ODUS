@@ -59,7 +59,7 @@ export default function AboutProfessionals() {
       >
         {topProfessionals.map((prof, index) => (
           <div key={index} className="bg-white rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgba(11,59,140,0.03)] border border-neutral/5 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 bg-neutral/5 border-[6px] border-tertiary shadow-sm relative">
+            <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 bg-neutral/5 border-[6px] border-tertiary shadow-sm relative">
               {/* Fallback avatar icon representing the photo */}
               <div className="absolute inset-0 flex items-center justify-center text-neutral/30">
                 <svg className="w-20 h-20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
@@ -79,7 +79,7 @@ export default function AboutProfessionals() {
       >
         {teamProfessionals.map((prof, index) => (
           <div key={index} className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgba(11,59,140,0.02)] border border-neutral/5 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300">
-            <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden mb-5 bg-neutral/5 border-4 border-tertiary shadow-sm relative">
+            <div className="w-32 h-32 rounded-full overflow-hidden mb-5 bg-neutral/5 border-4 border-tertiary shadow-sm relative">
               {/* Fallback avatar icon representing the photo */}
               <div className="absolute inset-0 flex items-center justify-center text-neutral/30">
                 <svg className="w-14 h-14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
