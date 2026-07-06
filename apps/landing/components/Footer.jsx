@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -8,18 +9,19 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max-width mx-auto">
         <div className="flex flex-col gap-4">
           <Link
-            className="font-headline-md text-headline-md font-bold text-primary flex items-center gap-2"
+            className="flex items-center gap-2"
             href="/"
             onClick={(e) => {
-              if (typeof window !== "undefined" && window.location.pathname === "/") {
+              if (
+                typeof window !== "undefined" &&
+                window.location.pathname === "/"
+              ) {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }
             }}
           >
-            <span className="bg-primary text-white px-2 py-1 rounded-md text-sm tracking-widest font-bold">
-              ODUS
-            </span>
+            <Logo className="w-auto h-10 text-primary hover:text-secondary transition-colors duration-300" />
           </Link>
           <p className="font-body-sm text-body-sm text-neutral">
             Humanized Precision in Healthcare.

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MdAccountCircle } from "react-icons/md";
+import Logo from "./Logo";
 
 export default function Header() {
   const pathname = usePathname();
@@ -29,10 +30,7 @@ export default function Header() {
             }}
             className="flex items-center gap-2"
           >
-            <span className="bg-primary text-tertiary px-2 py-1 rounded-md text-sm tracking-widest font-bold">
-              ODUS
-            </span>
-            <span className="hidden sm:inline">Centro Médico</span>
+            <Logo className="w-auto h-8 text-primary hover:text-secondary transition-colors duration-300" />
           </Link>
         </div>
 

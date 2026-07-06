@@ -46,7 +46,7 @@ To ensure maximum scalability and code sharing between the landing page, the pat
 4.  **Living Context Document:** This `AGENTS.md` file is the source of truth for the project context. Whenever a relevant architectural decision, strict rule, or major change occurs during development, **you must update this file** to ensure future agents have the full, up-to-date context.
 5.  **Git Commit Policy:**
     *   Commits and pushes **MUST ONLY** be made by the user. The AI will suggest appropriate commit messages in Spanish when requested.
-    *   Commit messages **MUST** be written in **Spanish** (in lowercase after the type).
+    *   Commit messages **MUST** be written in **Spanish** (in lowercase after the type, and **MUST NOT** contain any accents/tildes).
     *   **Pre-Commit Workflow:** When the user asks for a commit name suggestion, the agent **MUST** verify the current state of the project and that of each individual application (e.g., `landing`, `admin`, `api`, etc.) and proactively update their respective `README.md` files to reflect the new features or bugfixes introduced. **IMPORTANT:** The `README.md` files must not contain installation/running guides or implementation details, but rather describe strictly what the project/app is about, what technologies it uses, and how it is structured/built.
     *   Commits must adhere strictly to the following semantic structure and types:
         *   `feat`: New features.
