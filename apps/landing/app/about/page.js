@@ -14,7 +14,7 @@ export default function About() {
   );
 
   return (
-    <main className="w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20 flex flex-col gap-24 overflow-hidden select-none cursor-default">
+    <main className="w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-16 flex flex-col gap-24 overflow-hidden select-none cursor-default">
       {/* 1. Quiénes Somos (Hero) */}
       <AboutHero heroRef={heroRef} heroRevealed={heroRevealed} />
 

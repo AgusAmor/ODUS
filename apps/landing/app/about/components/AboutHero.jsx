@@ -6,7 +6,7 @@ export default function AboutHero({ heroRef, heroRevealed }) {
   return (
     <section
       ref={heroRef}
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative py-8 reveal-fade-up ${heroRevealed ? "revealed" : ""}`}
+      className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative pt-0 pb-8 reveal-fade-up ${heroRevealed ? "revealed" : ""}`}
     >
       {/* Decorative background clinical cross symbol */}
       <div className="absolute -left-8 top-12 text-primary/5 hidden lg:block select-none pointer-events-none">

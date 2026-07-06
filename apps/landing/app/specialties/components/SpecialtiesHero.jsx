@@ -6,7 +6,7 @@ export default function SpecialtiesHero({ heroRef, heroRevealed }) {
   return (
     <section 
       ref={heroRef}
-      className="relative pt-32 pb-20 px-margin-mobile md:px-margin-desktop overflow-hidden bg-tertiary/40 border-b border-neutral/5"
+      className="relative py-12 md:py-16 px-margin-mobile md:px-margin-desktop overflow-hidden bg-tertiary/40 border-b border-neutral/5"
     >
       {/* Subtle decorative background elements */}
       <div className="absolute inset-0 z-0 pointer-events-none">
