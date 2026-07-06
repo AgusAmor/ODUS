@@ -1,7 +1,6 @@
 import { Inter, Manrope } from "next/font/google";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import MobileNav from "../components/MobileNav";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,11 +31,10 @@ export default function RootLayout({ children }) {
     >
       <body className="bg-tertiary text-neutral font-sans antialiased min-h-screen flex flex-col">
         <Header />
-        <main className="grow pb-20 md:pb-0">
+        <main className="grow">
           {children}
         </main>
         <Footer />
-        <MobileNav />
       </body>
     </html>
   );
