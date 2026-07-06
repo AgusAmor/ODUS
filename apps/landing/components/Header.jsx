@@ -51,7 +51,7 @@ export default function Header() {
                   className={`px-3 py-2 transition-colors rounded-lg ${
                     isActive
                       ? "text-primary border-b-2 border-primary pb-1 rounded-b-none"
-                      : "text-neutral hover:text-primary hover:bg-primary/5"
+                      : "text-neutral hover:text-primary hover:bg-secondary/20"
                   }`}
                 >
                   {link.name}

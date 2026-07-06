@@ -17,6 +17,11 @@ const manrope = Manrope({
 export const metadata = {
   title: "ODUS Centro Médico",
   description: "Humanized Precision in Healthcare",
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {
