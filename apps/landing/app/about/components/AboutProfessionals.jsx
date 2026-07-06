@@ -39,7 +39,8 @@ export default function AboutProfessionals() {
   const [bottomGridRef, bottomGridRevealed] = useScrollReveal(0.15, "0px 0px -100px 0px");
 
   return (
-    <section className="w-full flex flex-col gap-12 lg:gap-16">
+    <section className="w-full py-section-gap relative z-20 bg-tertiary/30">
+      <div className="w-full max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-12 lg:gap-16">
       <div 
         ref={headerRef} 
         className={`text-center reveal-fade-up ${headerRevealed ? "revealed" : ""}`}
@@ -58,7 +59,7 @@ export default function AboutProfessionals() {
         className={`grid grid-cols-1 md:grid-cols-2 gap-8 reveal-fade-up transition-delay-150 ${topGridRevealed ? "revealed" : ""}`}
       >
         {topProfessionals.map((prof, index) => (
-          <div key={index} className="bg-white rounded-3xl p-8 md:p-10 shadow-[0_8px_30px_rgba(11,59,140,0.03)] border border-neutral/5 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300">
+          <div key={index} className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl shadow-primary/10 border border-neutral/5 flex flex-col items-center text-center group hover:-translate-y-4 hover:shadow-[0_30px_60px_rgba(11,59,140,0.15)] transition-all duration-500 relative z-30">
             <div className="w-32 h-32 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 bg-neutral/5 border-[6px] border-tertiary shadow-sm relative">
               {/* Fallback avatar icon representing the photo */}
               <div className="absolute inset-0 flex items-center justify-center text-neutral/30">
@@ -78,7 +79,7 @@ export default function AboutProfessionals() {
         className={`grid grid-cols-1 md:grid-cols-3 gap-6 reveal-fade-up transition-delay-300 ${bottomGridRevealed ? "revealed" : ""}`}
       >
         {teamProfessionals.map((prof, index) => (
-          <div key={index} className="bg-white rounded-3xl p-6 md:p-8 shadow-[0_8px_30px_rgba(11,59,140,0.02)] border border-neutral/5 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300">
+          <div key={index} className="bg-white rounded-3xl p-6 md:p-8 shadow-xl shadow-primary/5 border border-neutral/5 flex flex-col items-center text-center group hover:-translate-y-3 hover:shadow-[0_20px_50px_rgba(11,59,140,0.12)] transition-all duration-500">
             <div className="w-32 h-32 rounded-full overflow-hidden mb-5 bg-neutral/5 border-4 border-tertiary shadow-sm relative">
               {/* Fallback avatar icon representing the photo */}
               <div className="absolute inset-0 flex items-center justify-center text-neutral/30">
@@ -90,6 +91,7 @@ export default function AboutProfessionals() {
             <p className="font-body-md text-sm text-neutral leading-relaxed">{prof.description}</p>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

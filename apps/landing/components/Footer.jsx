@@ -24,7 +24,7 @@ export default function Footer() {
             <Logo className="w-auto h-10 text-primary hover:text-secondary transition-colors duration-300" />
           </Link>
           <p className="font-body-sm text-body-sm text-neutral">
-            Humanized Precision in Healthcare.
+            Centro Médico.
           </p>
         </div>
         <div className="flex flex-col gap-4">

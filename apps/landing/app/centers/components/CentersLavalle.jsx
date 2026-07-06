@@ -7,9 +7,10 @@ export default function CentersLavalle({ lavalleRef, lavalleRevealed }) {
     <section
       ref={lavalleRef}
       id="sede-lavalle"
-      className={`mt-0 scroll-mt-24 md:scroll-mt-28 select-none cursor-default reveal-fade-up ${lavalleRevealed ? "revealed" : ""}`}
+      className={`py-section-gap bg-secondary/5 scroll-mt-24 md:scroll-mt-28 select-none cursor-default reveal-fade-up ${lavalleRevealed ? "revealed" : ""}`}
     >
-      <div className="bg-white/70 backdrop-blur-md rounded-4xl p-8 md:p-12 border border-neutral/10 shadow-[0_8px_24px_rgba(11,59,140,0.02)] relative overflow-hidden group hover:scale-[1.005] transition-transform duration-300">
+      <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+        <div className="bg-white/70 backdrop-blur-md rounded-4xl p-8 md:p-12 border border-neutral/10 shadow-[0_8px_24px_rgba(11,59,140,0.02)] relative overflow-hidden group hover:scale-[1.005] transition-transform duration-300">
         {/* Decorative background radial glows */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full filter blur-3xl opacity-60 translate-x-1/2 -translate-y-1/2 pointer-events-none group-hover:scale-105 transition-transform duration-500"></div>
         <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-secondary/5 rounded-full filter blur-3xl opacity-60 -translate-x-1/2 translate-y-1/2 pointer-events-none group-hover:scale-105 transition-transform duration-500"></div>
@@ -38,6 +39,7 @@ export default function CentersLavalle({ lavalleRef, lavalleRevealed }) {
           <div className="hidden md:flex text-primary/10 select-none group-hover:scale-110 transition-transform duration-500 shrink-0">
             <MdOutlineDomainAdd size={120} />
           </div>
+        </div>
         </div>
       </div>
     </section>

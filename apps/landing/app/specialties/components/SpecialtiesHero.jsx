@@ -8,10 +8,10 @@ export default function SpecialtiesHero({ heroRef, heroRevealed }) {
       ref={heroRef}
       className="relative py-12 md:py-16 px-margin-mobile md:px-margin-desktop overflow-hidden bg-tertiary/40 border-b border-neutral/5"
     >
-      {/* Subtle decorative background elements */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-bl from-primary/5 to-transparent opacity-60 rounded-bl-full filter blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-1/3 h-2/3 bg-linear-to-tr from-secondary/5 to-transparent opacity-60 rounded-tr-full filter blur-3xl"></div>
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 z-0 w-full pointer-events-none">
+        <div className="absolute top-0 right-0 w-full md:w-3/4 h-full bg-primary/10 rounded-bl-full opacity-80 blur-[120px]"></div>
+        <div className="absolute -bottom-1/4 -left-1/4 w-full h-3/4 bg-secondary/15 rounded-tr-full opacity-80 blur-[120px]"></div>
       </div>
 
       <div className="max-w-3xl mx-auto relative z-10 text-center flex flex-col items-center">

@@ -149,7 +149,7 @@ export default function Specialties() {
                 }}
                 className={`bg-white rounded-3xl p-6 border border-neutral/20 shadow-[0_4px_12px_rgba(11,59,140,0.04)] flex flex-col items-start gap-4 translate-y-0 transition-all duration-300 group reveal-fade-up ${delayClass} ${isRevealed ? "revealed" : ""} ${
                   specialty.hasModal
-                    ? "hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(11,59_140,0.08)] cursor-pointer"
+                    ? "hover:-translate-y-1 hover:border-secondary/40 hover:shadow-[0_12px_32px_rgba(11,59,140,0.08)] cursor-pointer"
                     : "cursor-default select-none"
                 }`}
               >

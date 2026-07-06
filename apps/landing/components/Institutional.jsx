@@ -84,7 +84,7 @@ export default function Institutional() {
 
   return (
     <section
-      className="bg-linear-to-b from-tertiary/30 via-white to-tertiary/20 py-12 md:py-16 border-t border-neutral/10 relative overflow-hidden"
+      className="bg-linear-to-b from-white to-secondary/10 py-12 md:py-16 border-t border-neutral/5 relative overflow-hidden"
       id="institucional"
     >
       {/* Subtle organic background blobs for depth */}

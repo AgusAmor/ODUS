@@ -18,8 +18,8 @@ export default function Hero() {
     >
       {/* Decorative background elements */}
       <div className="absolute inset-0 z-0 w-full pointer-events-none">
-        <div className="absolute top-1/4 right-0 w-3/4 h-3/4 bg-primary/5 rounded-l-full opacity-50 blur-3xl"></div>
-        <div className="absolute bottom-0 left-10 w-1/2 h-1/2 bg-secondary/5 rounded-t-full opacity-50 blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-full md:w-3/4 h-full bg-primary/10 rounded-bl-full opacity-80 blur-[120px]"></div>
+        <div className="absolute -bottom-1/4 -left-1/4 w-full h-3/4 bg-secondary/15 rounded-tr-full opacity-80 blur-[120px]"></div>
       </div>
 
       <div className="px-margin-mobile md:px-margin-desktop max-w-container-max-width mx-auto w-full relative z-10">

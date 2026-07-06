@@ -4,14 +4,17 @@ export default function CentersHero({ heroRef, heroRevealed }) {
   return (
     <section
       ref={heroRef}
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center relative pt-0 pb-6 lg:py-8 reveal-fade-up ${heroRevealed ? "revealed" : ""}`}
+      className={`relative pt-10 pb-6 lg:py-16 overflow-hidden reveal-fade-up ${heroRevealed ? "revealed" : ""}`}
     >
-      {/* Decorative background blur blobs */}
-      <div className="absolute -top-20 -left-20 w-64 h-64 bg-primary/5 rounded-full filter blur-3xl opacity-60 z-0 pointer-events-none"></div>
-      <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-secondary/5 rounded-full filter blur-3xl opacity-60 z-0 pointer-events-none"></div>
+      {/* Decorative background elements (Full bleed) */}
+      <div className="absolute inset-0 z-0 w-full pointer-events-none">
+        <div className="absolute top-0 right-0 w-full md:w-3/4 h-full bg-primary/10 rounded-bl-full opacity-80 blur-[120px]"></div>
+        <div className="absolute -bottom-1/4 -left-1/4 w-full h-3/4 bg-secondary/15 rounded-tr-full opacity-80 blur-[120px]"></div>
+      </div>
 
-      {/* Left Content */}
-      <div className="flex flex-col gap-4 lg:gap-6 z-10 items-start text-left order-2 lg:order-1">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop z-10 relative">
+        {/* Left Content */}
+        <div className="flex flex-col gap-4 lg:gap-6 items-start text-left order-2 lg:order-1">
         <h1 className="font-headline-display text-3xl md:text-headline-display font-extrabold text-primary leading-tight tracking-tight">
           Nuestras Sedes
         </h1>
@@ -50,6 +53,7 @@ export default function CentersHero({ heroRef, heroRevealed }) {
           className="w-full h-full object-cover"
           src="/images/centers_exterior.png"
         />
+      </div>
       </div>
     </section>
   );

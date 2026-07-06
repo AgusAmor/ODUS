@@ -18,8 +18,9 @@ export default function CentersPellegrini({
     <section
       ref={pellegriniRef}
       id="sede-pellegrini"
-      className={`flex flex-col gap-8 pt-0 scroll-mt-24 md:scroll-mt-28 select-none cursor-default reveal-fade-up ${pellegriniRevealed ? "revealed" : ""}`}
+      className={`py-section-gap scroll-mt-24 md:scroll-mt-28 select-none cursor-default relative overflow-hidden reveal-fade-up ${pellegriniRevealed ? "revealed" : ""}`}
     >
+      <div className="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col gap-8 relative z-10">
       {/* Header Info */}
       <div className="flex flex-col gap-2 items-start text-left">
         <h2 className="font-headline-lg text-2xl text-primary font-bold">
@@ -54,8 +55,8 @@ export default function CentersPellegrini({
           {/* Booking Card */}
           <div className="bg-primary text-white rounded-4xl p-6 md:p-8 lg:p-10 flex flex-col justify-center items-start gap-4 md:gap-6 shadow-xl relative overflow-hidden ring-4 ring-primary/5 grow group text-left">
             {/* Background design accents */}
-            <div className="absolute top-0 right-0 w-40 h-40 bg-white/5 rounded-bl-full pointer-events-none group-hover:scale-105 transition-transform duration-500"></div>
-            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-white/5 rounded-full pointer-events-none group-hover:scale-105 transition-transform duration-500"></div>
+            <div className="absolute top-0 right-0 w-40 h-40 bg-secondary/10 rounded-bl-full pointer-events-none group-hover:scale-105 transition-transform duration-500"></div>
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-secondary/10 rounded-full pointer-events-none group-hover:scale-105 transition-transform duration-500"></div>
 
             <div className="z-10 w-full">
               <div className="flex items-center gap-4 mb-4">
@@ -96,10 +97,10 @@ export default function CentersPellegrini({
           {/* Specialties and Diagnostics details */}
           <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
             {/* Especialidades Card */}
-            <div className="bg-white rounded-3xl p-4 md:p-6 border border-neutral/10 shadow-[0_8px_24px_rgba(11,59,140,0.01)] flex flex-col gap-3 md:gap-4 text-left hover:scale-[1.01] transition-transform duration-300">
+            <div className="bg-white rounded-3xl p-4 md:p-6 border border-neutral/10 shadow-[0_8px_24px_rgba(11,59,140,0.02)] flex flex-col gap-3 md:gap-4 text-left hover:scale-[1.01] hover:border-secondary/30 transition-all duration-300">
               <div className="flex items-center gap-2 md:gap-3 mb-1 md:mb-2">
                 <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/5 rounded-2xl flex items-center justify-center text-primary shrink-0">
-                  <MdOutlineLocalHospital size={20} className="md:w-[22px] md:h-[22px]" />
+                  <MdOutlineLocalHospital size={20} className="md:w-5.5 md:h-5.5" />
                 </div>
                 <h3 className="font-headline-md text-sm sm:text-base md:text-lg text-primary font-bold">
                   Especialidades
@@ -131,10 +132,10 @@ export default function CentersPellegrini({
             </div>
 
             {/* Diagnóstico Card */}
-            <div className="bg-white rounded-3xl p-4 md:p-6 border border-neutral/10 shadow-[0_8px_24px_rgba(11,59,140,0.01)] flex flex-col gap-3 md:gap-4 text-left hover:scale-[1.01] transition-transform duration-300">
+            <div className="bg-white rounded-3xl p-4 md:p-6 border border-neutral/10 shadow-[0_8px_24px_rgba(11,59,140,0.02)] flex flex-col gap-3 md:gap-4 text-left hover:scale-[1.01] hover:border-secondary/30 transition-all duration-300">
               <div className="flex items-center gap-2 md:gap-3 mb-1 md:mb-2">
                 <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/5 rounded-2xl flex items-center justify-center text-primary shrink-0">
-                  <MdOutlineAssignment size={20} className="md:w-[22px] md:h-[22px]" />
+                  <MdOutlineAssignment size={20} className="md:w-5.5 md:h-5.5" />
                 </div>
                 <h3 className="font-headline-md text-sm sm:text-base md:text-lg text-primary font-bold">
                   Diagnóstico
@@ -176,6 +177,7 @@ export default function CentersPellegrini({
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
