@@ -19,6 +19,7 @@ La landing page se encuentra actualmente en desarrollo activo (**Fase 1**). Se h
 - **Sistema de Scroll Reveal (Animaciones Once-off)**: Animaciones de entrada en scroll de alto rendimiento que se disparan **exactamente una vez** la primera vez que un elemento entra al viewport. Implementado de forma nativa a través de un React Hook (`useScrollReveal.js`) que encapsula la API `IntersectionObserver`, evitando el uso de librerías externas pesadas.
 - **Configuración de Favicon**: Implementación de favicon moderno y escalable mediante `app/icon.svg` (utilizando el isotipo corporativo outline), inyectado explícitamente en los metadatos de `app/layout.js` para asegurar su correcta resolución visual.
 - **Integración de Fotografía Oficial**: Reemplazo de imágenes generadas (*placeholders*) por fotografías arquitectónicas y clínicas reales del Centro Médico ODUS (`.jpg`), mapeadas e integradas de forma optimizada a través de las distintas secciones de la plataforma (Cardiología, Ginecología, Otorrinolaringología, Recepción, Exteriores y Pasillos).
+- **Sistema Global de Turnos (WhatsApp)**: Todos los componentes de *Call to Action* (CTAs) distribuidos en la plataforma (Headers, Heroes, flujos de especialidades, sedes y sección de contacto) están unificados y apuntan directamente al número oficial de WhatsApp de la clínica para agilizar la asignación de turnos.
 - **Footer Global**: Pie de página responsivo con accesos directos, datos de contacto, enlaces legales y redes sociales.
 
 ## Estructura de Carpetas Clave

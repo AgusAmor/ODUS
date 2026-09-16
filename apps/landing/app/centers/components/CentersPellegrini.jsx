@@ -74,7 +74,7 @@ export default function CentersPellegrini({
               </p>
               <div className="flex flex-col sm:flex-row gap-4 w-full">
                 <a
-                  href="https://wa.me/5491128331920"
+                  href="https://wa.me/5491128842227"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-primary py-4 px-8 rounded-2xl font-label-md text-label-md font-bold hover:bg-tertiary hover:scale-95 transition-all shadow-md active:scale-95 grow cursor-pointer text-center inline-block"

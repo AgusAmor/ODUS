@@ -97,7 +97,7 @@ export default function Header() {
           {/* Desktop Action Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://wa.me/5491128331920"
+              href="https://wa.me/5491128842227"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-primary text-tertiary px-6 py-2.5 rounded-2xl text-sm font-bold hover:scale-95 transition-transform shadow-sm cursor-pointer text-center inline-block"
@@ -162,7 +162,7 @@ export default function Header() {
 
         <div className="mt-4 border-t border-neutral/20 pt-8 flex flex-col gap-4">
           <a
-            href="https://wa.me/5491128331920"
+            href="https://wa.me/5491128842227"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setIsMobileMenuOpen(false)}

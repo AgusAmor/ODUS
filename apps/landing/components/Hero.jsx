@@ -43,7 +43,7 @@ export default function Hero() {
               className={`flex flex-wrap gap-4 reveal-fade-up transition-delay-150 ${isRevealed ? "revealed" : ""}`}
             >
               <a
-                href="https://wa.me/5491128331920"
+                href="https://wa.me/5491128842227"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-white font-label-md text-label-md px-8 py-4 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm items-center gap-2 cursor-pointer text-center inline-flex"
@@ -52,7 +52,7 @@ export default function Hero() {
                 Agendar turno
               </a>
               {/* <a
-                href="https://wa.me/5491128331920"
+                href="https://wa.me/5491128842227"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-secondary text-primary font-label-md text-label-md px-8 py-4 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm items-center gap-2 cursor-pointer text-center inline-flex"

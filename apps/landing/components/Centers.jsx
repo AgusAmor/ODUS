@@ -83,7 +83,7 @@ export default function Centers() {
 
               <div className="flex flex-wrap gap-4 mt-4">
                 <a
-                  href="https://wa.me/5491128331920"
+                  href="https://wa.me/5491128842227"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary text-white font-label-md text-label-md px-6 py-3 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm cursor-pointer text-center inline-block"

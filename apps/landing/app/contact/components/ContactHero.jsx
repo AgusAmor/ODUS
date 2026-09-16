@@ -37,7 +37,7 @@ export default function ContactHero({ heroRef, heroRevealed }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-xl">
             {/* Card 1: WhatsApp */}
             <a
-              href="https://wa.me/5491128331920"
+              href="https://wa.me/5491128842227"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white border border-neutral/10 rounded-3xl p-6 shadow-[0_4px_12px_rgba(11,59,140,0.015)] flex items-center gap-4 hover:scale-[1.01] hover:shadow-[0_8px_24px_rgba(11,59,140,0.04)] transition-all duration-300 group cursor-pointer"
