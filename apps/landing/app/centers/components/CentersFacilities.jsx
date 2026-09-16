@@ -79,8 +79,8 @@ export default function CentersFacilities({
                 <div className="rounded-3xl overflow-hidden h-64 md:h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 hover:scale-[1.01] transition-transform duration-300">
                   <img
                     alt="Recepción moderna y acogedora de la clínica ODUS"
-                    className="w-full h-full object-cover"
-                    src="/images/reception.png"
+                    className="w-full h-full object-cover object-[82%]"
+                    src="/images/reception.jpg"
                   />
                 </div>
                 {/* Visual Circle Badge from Slide */}
@@ -93,8 +93,8 @@ export default function CentersFacilities({
               <div className="rounded-3xl overflow-hidden h-64 md:h-100 shadow-[0_8px_24px_rgba(11,59,140,0.02)] border border-neutral/10 md:mt-12 hover:scale-[1.01] transition-transform duration-300">
                 <img
                   alt="Tecnología de diagnóstico y confort en consultorio ODUS"
-                  className="w-full h-full object-cover"
-                  src="/images/comfort.png"
+                  className="w-full h-full object-cover object-[60%]"
+                  src="/images/comfort.jpg"
                 />
               </div>
             </div>

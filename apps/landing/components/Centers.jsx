@@ -41,8 +41,8 @@ export default function Centers() {
             <div className="w-full lg:w-1/2 aspect-video lg:aspect-square rounded-3xl overflow-hidden relative">
               <img
                 alt="Fachada moderna de la Sede Pellegrini"
-                className="absolute inset-0 w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9RhddcPLYeFH_Knis5A1ltnDjfcKxffNxvkSKiTCuakGGgXmFvBJNA2P0yLcQN8y5Th1IXIHR8Vbgoc4DWPShmBVEEMEh2NRJ5c2Mmyb-BbVPULTK8WRp_zNucTBvcd3UpNPyieJ_CD_-46yj-Zv_rz_n2zWDZzd847xDbALXnEkqJAefg7XtZq1-VwJsyiV0j4rMXqIU1sbyswb7j9f1uLrC_59uHJGzBqvsfJRkbE4bSz4eZILMkmudFOzYFn7FxPxJ8urqG8pu"
+                className="absolute inset-0 w-full h-full object-cover object-[65%]"
+                src="/images/centers_inicio.png"
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col gap-6">
@@ -76,8 +76,8 @@ export default function Centers() {
                   className="text-primary shrink-0 mt-0.5"
                 />
                 <p className="font-body-md text-body-md">
-                  Especialidades médicas, estudios diagnósticos y diagnóstico por
-                  imágenes.
+                  Especialidades médicas, estudios diagnósticos y diagnóstico
+                  por imágenes.
                 </p>
               </div>
 

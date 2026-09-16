@@ -46,7 +46,7 @@ export default function CentersPellegrini({
           <img
             alt="Pasillo moderno e iluminado de Sede Pellegrini ODUS"
             className="w-full h-full object-cover"
-            src="/images/centers_hallway.png"
+            src="/images/centers_hallway.jpg"
           />
         </div>
 

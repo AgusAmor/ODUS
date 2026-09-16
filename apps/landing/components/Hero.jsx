@@ -68,8 +68,8 @@ export default function Hero() {
           >
             <img
               alt="Interior de clínica moderno y limpio"
-              className="w-full h-full object-cover rounded-3xl shadow-sm border border-neutral/20 z-10 relative"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj-nHBJbNyNwc78KZFekAocIxDHoKmwJRpPqxvm-9HAeUHmphelRovq1EQNAzaYHtRfAZc3gWdsYwMY42OQoQ0RfD_mLzhuLeXH4mtx_WbGiozW9H8UKMwlzof-iF17aYaAqbnHYfGFMaSpu_IbcbDDnQDc3YHhBSWBe61BTIvc3ZNcBP7m8DPRj6Z4w2Zhq8Iay1So_Ehp_jepVXNAcAIa1SY2Za1K7HCuFomadmGlOdGNow-frj9xWDFhXL5VbDzC-6vzdRbejEM"
+              className="w-full h-full object-cover object-right rounded-3xl shadow-sm border border-neutral/20 z-10 relative"
+              src="/images/reception.jpg"
             />
 
             {/* Glassmorphic Card 1 */}

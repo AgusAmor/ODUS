@@ -76,6 +76,8 @@ To ensure maximum scalability and code sharing between the landing page, the pat
    - **Hook (`apps/landing/components/useScrollReveal.js`)**: Uses native browser `IntersectionObserver` that automatically disconnects after the element is revealed to keep CPU overhead at zero.
    - **Classes**: Defines premium entrance styles in [globals.css](file:///c:/Users/Elmo/Desktop/ODUS/apps/landing/app/globals.css) under `.reveal-fade-up`, combined with staggered delays (`.transition-delay-75` to `.transition-delay-450`).
    - **Strict Rule**: Avoid installing third-party animation libraries (such as Framer Motion or GSAP) unless explicitly requested, as they bloat bundle size. Use the custom reveal hook and native CSS transitions.
+8. **Planning Before Execution:**
+   - **ALWAYS** present an implementation plan (or list the steps to follow) before performing any action or modifying files, allowing the user to approve or adjust the approach.
 
 ---
 

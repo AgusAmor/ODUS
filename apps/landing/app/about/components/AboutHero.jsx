@@ -25,8 +25,8 @@ export default function AboutHero({ heroRef, heroRevealed }) {
           <div className="rounded-4xl overflow-hidden shadow-[0_8px_24px_rgba(11,59,140,0.02)] aspect-4/3 lg:aspect-4/3 border border-neutral/10 relative hover:scale-[1.01] transition-transform duration-300">
             <img
               alt="Fachada moderna del centro médico ODUS"
-              className="w-full h-full object-cover"
-              src="/images/centers_exterior.png"
+              className="w-full h-full object-cover object-right"
+              src="/images/centers_exterior.jpg"
             />
           </div>
 

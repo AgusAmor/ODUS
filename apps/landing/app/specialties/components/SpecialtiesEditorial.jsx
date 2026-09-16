@@ -29,7 +29,7 @@ export default function SpecialtiesEditorial({
               <img
                 alt="Cardiología ecógrafo monitoreo cardíaco ODUS"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src="/images/cardiology.png"
+                src="/images/cardiology.jpg"
               />
             </div>
             {/* Mobile Glassmorphic Overlay (Hero Style - Pop-out) */}
@@ -96,7 +96,7 @@ export default function SpecialtiesEditorial({
               <img
                 alt="Ginecología transductor ecógrafo ODUS"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src="/images/gynecology.png"
+                src="/images/gynecology.jpg"
               />
             </div>
             {/* Mobile Glassmorphic Overlay (Hero Style - Pop-out) */}
@@ -123,7 +123,7 @@ export default function SpecialtiesEditorial({
               <img
                 alt="Otorrinolaringología instrumental otoscopio ODUS"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                src="/images/ent.png"
+                src="/images/ent.jpg"
               />
             </div>
             {/* Mobile Glassmorphic Overlay (Hero Style - Pop-out) */}

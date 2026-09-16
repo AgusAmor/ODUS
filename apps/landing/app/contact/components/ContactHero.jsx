@@ -81,7 +81,7 @@ export default function ContactHero({ heroRef, heroRevealed }) {
             <img
               alt="Recepción moderna y cálida del Centro Médico ODUS"
               className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700"
-              src="/images/reception.png"
+              src="/images/reception.jpg"
             />
           </div>
         </div>
