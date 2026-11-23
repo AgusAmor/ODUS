@@ -43,7 +43,7 @@ export default function Hero() {
               className={`flex flex-wrap gap-4 reveal-fade-up transition-delay-150 ${isRevealed ? "revealed" : ""}`}
             >
               <a
-                href="https://wa.me/5491128842227"
+                href="https://wa.me/5491128842227?text=Hola!%20Me%20comunico%20desde%20su%20sitio%20web.%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-white font-label-md text-label-md px-8 py-4 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm items-center gap-2 cursor-pointer text-center inline-flex"

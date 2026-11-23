@@ -21,8 +21,8 @@ export default function About() {
       {/* 2. Por Qué Elegirnos */}
       <AboutWhyChooseUs chooseRef={chooseRef} chooseRevealed={chooseRevealed} />
 
-      {/* 3. Nuestros Profesionales */}
-      <AboutProfessionals />
+      {/* 3. Nuestros Profesionales (Comentado temporalmente) */}
+      {/* <AboutProfessionals /> */}
     </main>
   );
 }

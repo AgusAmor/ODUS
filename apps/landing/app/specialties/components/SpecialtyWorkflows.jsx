@@ -3,9 +3,12 @@
 import useScrollReveal from "../../hooks/useScrollReveal";
 import { MdOutlineMonitorHeart, MdOutlinePregnantWoman } from "react-icons/md";
 
+const BASE_WA = "5491128842227";
+
 const workflows = {
   cardiology: {
     title: "Tu Circuito Cardiológico",
+    waText: "Hola!%20Me%20comunico%20desde%20su%20sitio%20web.%20Quisiera%20consultar%20disponibilidad%20de%20turnos%20para%20Cardiolog%C3%ADa.",
     icon: <MdOutlineMonitorHeart size={24} />,
     themeClass: "bg-white text-primary",
     borderClass: "border-white",
@@ -30,6 +33,7 @@ const workflows = {
   },
   gynecology: {
     title: "Tu Circuito Ginecológico",
+    waText: "Hola!%20Me%20comunico%20desde%20su%20sitio%20web.%20Quisiera%20consultar%20disponibilidad%20de%20turnos%20para%20Ginecolog%C3%ADa.",
     icon: <MdOutlinePregnantWoman size={24} />,
     themeClass: "bg-secondary text-primary",
     borderClass: "border-secondary",
@@ -134,7 +138,7 @@ export default function SpecialtyWorkflows() {
 
               <div className="mt-8 pt-8 border-t border-white/10 flex justify-start">
                 <a
-                  href="https://wa.me/5491128842227"
+                  href={`https://wa.me/${BASE_WA}?text=${workflow.waText}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`inline-flex items-center justify-center px-6 py-3 rounded-2xl font-label-md text-label-md font-bold transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg ${workflow.themeClass}`}

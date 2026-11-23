@@ -62,7 +62,7 @@ export default function Centers() {
                   className="text-primary shrink-0 mt-0.5"
                 />
                 <p className="font-body-md text-body-md">
-                  Av. Pellegrini 1234, Centro
+                  Av. Pellegrini 126, Quilmes
                   <br />
                   <span className="text-sm text-neutral/80">
                     Atención: Lunes a Viernes 9:00 a 18:00hs.
@@ -83,7 +83,7 @@ export default function Centers() {
 
               <div className="flex flex-wrap gap-4 mt-4">
                 <a
-                  href="https://wa.me/5491128842227"
+                  href="https://wa.me/5491128842227?text=Hola!%20Me%20comunico%20desde%20su%20sitio%20web.%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary text-white font-label-md text-label-md px-6 py-3 rounded-2xl hover:scale-95 transition-transform duration-200 shadow-sm cursor-pointer text-center inline-block"

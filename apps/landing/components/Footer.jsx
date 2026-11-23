@@ -23,9 +23,6 @@ export default function Footer() {
           >
             <Logo className="w-auto h-10 text-primary hover:text-secondary transition-colors duration-300" />
           </Link>
-          <p className="font-body-sm text-body-sm text-neutral">
-            Centro Médico.
-          </p>
         </div>
         <div className="flex flex-col gap-4">
           <h4 className="font-label-md text-label-md text-primary font-semibold">

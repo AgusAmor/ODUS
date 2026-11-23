@@ -29,7 +29,7 @@ export default function CentersPellegrini({
         <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-neutral font-body-md mt-1 items-center">
           <p className="flex items-center gap-1.5">
             <MdOutlineLocationOn size={18} className="text-primary shrink-0" />
-            <span>Av. Pellegrini 1234, Centro</span>
+            <span>Av. Pellegrini 126, Quilmes</span>
           </p>
           <span className="hidden md:inline text-neutral/45">|</span>
           <p className="flex items-center gap-1.5">
@@ -74,7 +74,7 @@ export default function CentersPellegrini({
               </p>
               <div className="flex flex-col sm:flex-row gap-4 w-full">
                 <a
-                  href="https://wa.me/5491128842227"
+                  href="https://wa.me/5491128842227?text=Hola!%20Me%20comunico%20desde%20su%20sitio%20web.%20Quisiera%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white text-primary py-4 px-8 rounded-2xl font-label-md text-label-md font-bold hover:bg-tertiary hover:scale-95 transition-all shadow-md active:scale-95 grow cursor-pointer text-center inline-block"

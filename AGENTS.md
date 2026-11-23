@@ -43,8 +43,9 @@ To ensure maximum scalability and code sharing between the landing page, the pat
 ## 5. Agent Guidelines & Rules
 
 0. **Code Modification Workflow & Tool Usage:**
-   - **DO NOT** output raw code blocks in the chat when asked to write or modify code. You must apply all changes directly to the workspace files using the appropriate file-editing tools (such as `replace_file_content`, `multi_replace_file_content`, or `write_to_file`).
-   - These tool edits **MUST** trigger the IDE's native "Review / Pending Approval" split UI. Bypassing this approval gate is strictly prohibited; the user must always be able to click Accept or Reject in the IDE interface before changes are written.
+   - **DO NOT** output raw code blocks in the chat when asked to write or modify code. You must apply all changes directly to the workspace files using the appropriate file-editing tools (such as `edit_file` or `write_file`).
+   - These tool edits **MUST** trigger the IDE's native "Review / Pending Approval" split UI.
+   - **Direct Execution & Diff Approval:** When requested to make changes or implement a task, proceed directly to edit the workspace files without pausing in chat to ask for manual confirmation. The user reviews and approves/rejects the changes directly within the IDE's native diff interface.
 1. **Language Policy:**
    - Write all code, file names, variables, and code comments in **English**.
    - **CRITICAL:** All user-facing UI text (copy, buttons, navigation, public content) must be strictly in **Spanish**.
